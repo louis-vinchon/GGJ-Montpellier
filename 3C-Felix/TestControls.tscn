@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6ptp4vk18lb5"]
+
+[ext_resource type="PackedScene" uid="uid://dj6br5xyalht" path="res://3C-Felix/PlayerCharacter.tscn" id="1_d8nhi"]
+[ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="2_dw05f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4b2c"]
+size = Vector2(122, 122)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("1_d8nhi")]
+position = Vector2(246, 114)
+mass = 2.5
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(116, 111)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+modulate = Color(0.196078, 0.286275, 1, 1)
+texture = ExtResource("2_dw05f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_n4b2c")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(390, 63)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+modulate = Color(0.196078, 0.286275, 1, 1)
+texture = ExtResource("2_dw05f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("RectangleShape2D_n4b2c")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(382, 265)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+modulate = Color(0.196078, 0.286275, 1, 1)
+texture = ExtResource("2_dw05f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("RectangleShape2D_n4b2c")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(153, 297)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
+modulate = Color(0.196078, 0.286275, 1, 1)
+texture = ExtResource("2_dw05f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("RectangleShape2D_n4b2c")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2(327, 419)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
+modulate = Color(0.196078, 0.286275, 1, 1)
+texture = ExtResource("2_dw05f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+shape = SubResource("RectangleShape2D_n4b2c")
