@@ -28,7 +28,6 @@ cocci: (Vroum ?)
 Ahah je sais elle est incroyable, toi aussi t’en as sous le capot tu le sais.
 leave 
 join shopkeeper_1 1
-[end_timeline]
 shopkeeper_1: C’est bon j’ai trouvé, mais j’en ai deux qui peuvent correspondre à vos attentes, vous préférez lequel ?
 cocci: (Vroum ?)
 - 
@@ -51,3 +50,4 @@ cocci: (Vroum ?)
 	[music fade="0.0" volume="0.0"]
 shopkeeper_1: Bah vous avez déjà payé et il n’y a aucun remboursement, alors maintenant c’est ciao.
 [wait time="1.0"]
+[end_timeline]
