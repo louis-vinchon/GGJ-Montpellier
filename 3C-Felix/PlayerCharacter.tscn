@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dj6br5xyalht"]
+[gd_scene load_steps=6 format=3 uid="uid://dj6br5xyalht"]
 
 [ext_resource type="Script" path="res://3C-Felix/PlayerCharacter.gd" id="1_dtsqw"]
 [ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="1_mv1dl"]
+[ext_resource type="Script" path="res://3C-Felix/InteractionRay.gd" id="3_4hgy7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_csubi"]
 friction = 10.0
@@ -27,7 +28,6 @@ texture = ExtResource("1_mv1dl")
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
 modulate = Color(0, 0, 0, 1)
 rotation = 0.20546
-scale = Vector2(1, 1)
 texture = ExtResource("1_mv1dl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2"]
@@ -38,7 +38,6 @@ texture = ExtResource("1_mv1dl")
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D"]
 modulate = Color(0, 0, 0, 1)
 rotation = 0.20546
-scale = Vector2(1, 1)
 texture = ExtResource("1_mv1dl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
@@ -49,7 +48,6 @@ texture = ExtResource("1_mv1dl")
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
 modulate = Color(0, 0, 0, 1)
 rotation = 0.20546
-scale = Vector2(1, 1)
 texture = ExtResource("1_mv1dl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
@@ -60,7 +58,6 @@ texture = ExtResource("1_mv1dl")
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
 modulate = Color(0, 0, 0, 1)
 rotation = 0.20546
-scale = Vector2(1, 1)
 texture = ExtResource("1_mv1dl")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -73,3 +70,10 @@ texture = ExtResource("1_mv1dl")
 shape = SubResource("CircleShape2D_hjxpa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(15, 0)
+target_position = Vector2(20, 0)
+script = ExtResource("3_4hgy7")
+
+[connection signal="initiateInteraction" from="." to="RayCast2D" method="_on_player_character_initiate_interaction"]

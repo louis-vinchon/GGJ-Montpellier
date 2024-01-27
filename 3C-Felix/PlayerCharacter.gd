@@ -32,12 +32,18 @@ func _process(delta):
 		rotateInput += 1
 		pass
 	
+	if (Input.is_action_just_pressed("interact")):
+		
+		print("vroom")
+		emit_signal("initiateInteraction")
+	
 	RotationIncreased = delta * rotateInput * rotationSpeed
 	
 	acceleration = transform.x * forwardInput * accelerationPower * delta
 	
-	
 	pass
+
+
 
 
 func _physics_process(delta):
@@ -46,3 +52,5 @@ func _physics_process(delta):
 	
 	apply_central_force(acceleration)
 	
+
+signal initiateInteraction
