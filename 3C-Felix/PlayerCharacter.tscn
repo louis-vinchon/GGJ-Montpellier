@@ -13,13 +13,63 @@ radius = 15.2971
 [node name="PlayerCharacter" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_csubi")
 gravity_scale = 0.0
+inertia = 5.0
 linear_damp = 1.0
 script = ExtResource("1_dtsqw")
+accelerationPower = 50000.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.317647, 0.317647, 0.317647, 1)
-scale = Vector2(0.265625, 0.265625)
+modulate = Color(0, 0, 0, 1)
+rotation = 1.57079
+scale = Vector2(0.181959, 0.181959)
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+rotation = 0.20546
+scale = Vector2(1, 1)
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2"]
+modulate = Color(0, 0, 0, 1)
+rotation = 1.82977
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+rotation = 0.20546
+scale = Vector2(1, 1)
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
+modulate = Color(0, 0, 0, 1)
+rotation = 1.79969
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+rotation = 0.20546
+scale = Vector2(1, 1)
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
+modulate = Color(0, 0, 0, 1)
+rotation = 1.69739
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+rotation = 0.20546
+scale = Vector2(1, 1)
+texture = ExtResource("1_mv1dl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(10, 0)
+scale = Vector2(0.2, 0.0570313)
 texture = ExtResource("1_mv1dl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hjxpa")
+
+[node name="Camera2D" type="Camera2D" parent="."]

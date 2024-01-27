@@ -13,7 +13,7 @@ position = Vector2(246, 114)
 mass = 2.5
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(116, 111)
+position = Vector2(107, 148)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 modulate = Color(0.196078, 0.286275, 1, 1)
@@ -23,7 +23,7 @@ texture = ExtResource("2_dw05f")
 shape = SubResource("RectangleShape2D_n4b2c")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(390, 63)
+position = Vector2(792, 90)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
 modulate = Color(0.196078, 0.286275, 1, 1)
@@ -33,7 +33,7 @@ texture = ExtResource("2_dw05f")
 shape = SubResource("RectangleShape2D_n4b2c")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(382, 265)
+position = Vector2(816, 282)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
 modulate = Color(0.196078, 0.286275, 1, 1)
@@ -43,7 +43,7 @@ texture = ExtResource("2_dw05f")
 shape = SubResource("RectangleShape2D_n4b2c")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2(153, 297)
+position = Vector2(639, 508)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
 modulate = Color(0.196078, 0.286275, 1, 1)
@@ -53,7 +53,7 @@ texture = ExtResource("2_dw05f")
 shape = SubResource("RectangleShape2D_n4b2c")
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2(327, 419)
+position = Vector2(206, 435)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
 modulate = Color(0.196078, 0.286275, 1, 1)
