@@ -76,4 +76,6 @@ position = Vector2(15, 0)
 target_position = Vector2(20, 0)
 script = ExtResource("3_4hgy7")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="initiateInteraction" from="." to="RayCast2D" method="_on_player_character_initiate_interaction"]
