@@ -1,0 +1,183 @@
+[gd_scene load_steps=4 format=3 uid="uid://gonr8m2f24n0"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5jpvv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q24u0"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gd6b3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.643137, 0.643137, 0.643137, 1)
+position = Vector2(575.125, 655.063)
+scale = Vector2(1150.25, 1310.13)
+mesh = SubResource("QuadMesh_5jpvv")
+metadata/_edit_lock_ = true
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(8.3125, 107.219)
+scale = Vector2(16.625, 214.437)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="."]
+modulate = Color(0.933333, 0.705882, 0.580392, 1)
+position = Vector2(536, 1012)
+rotation = 1.5708
+scale = Vector2(548.067, 548.067)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+position = Vector2(384.25, 108.219)
+scale = Vector2(91.5, 214.437)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="."]
+modulate = Color(0.933333, 0.705882, 0.580392, 1)
+position = Vector2(74.0001, 108)
+scale = Vector2(91.5, 214.437)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="."]
+modulate = Color(0.933333, 0.705882, 0.580392, 1)
+position = Vector2(372, 519)
+scale = Vector2(632.375, 345.055)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+position = Vector2(692, 197)
+rotation = 1.5708
+scale = Vector2(91.5, 707.958)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="."]
+position = Vector2(888.666, 877.753)
+rotation = 1.5708
+scale = Vector2(191.506, 333.332)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="."]
+position = Vector2(890, 1151)
+rotation = 1.5708
+scale = Vector2(191.506, 333.332)
+mesh = SubResource("BoxMesh_q24u0")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+position = Vector2(404.219, 274.969)
+rotation = 1.5708
+scale = Vector2(49.5212, 49.5212)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+position = Vector2(708.219, 277.969)
+rotation = 1.5708
+scale = Vector2(49.5212, 49.5212)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="."]
+position = Vector2(995.219, 275.969)
+rotation = 1.5708
+scale = Vector2(49.5212, 49.5212)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="."]
+position = Vector2(861, 277)
+rotation = 1.5708
+scale = Vector2(49.5212, 49.5212)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="."]
+position = Vector2(995, 513)
+rotation = 1.5708
+scale = Vector2(219.566, 219.566)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="."]
+position = Vector2(236, 1092)
+rotation = 1.5708
+scale = Vector2(219.566, 219.566)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="."]
+position = Vector2(927, 277)
+rotation = 1.5708
+scale = Vector2(49.5212, 49.5212)
+mesh = SubResource("SphereMesh_gd6b3")
+
+[node name="Label6" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 291.0
+offset_top = 475.0
+offset_right = 440.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 50
+text = "Tapis
+"
+
+[node name="Label9" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 438.0
+offset_top = 162.0
+offset_right = 587.0
+offset_bottom = 231.0
+theme_override_font_sizes/font_size = 50
+text = "Bar
+"
+
+[node name="Label10" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 922.0
+offset_top = 478.0
+offset_right = 1071.0
+offset_bottom = 547.0
+theme_override_font_sizes/font_size = 50
+text = "Table
+"
+
+[node name="Label11" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 159.0
+offset_top = 1056.0
+offset_right = 308.0
+offset_bottom = 1125.0
+theme_override_font_sizes/font_size = 50
+text = "Table
+"
+
+[node name="Label12" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 799.0
+offset_top = 839.0
+offset_right = 948.0
+offset_bottom = 908.0
+theme_override_font_sizes/font_size = 50
+text = "Billard"
+
+[node name="Label13" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 809.0
+offset_top = 1121.0
+offset_right = 966.0
+offset_bottom = 1190.0
+theme_override_font_sizes/font_size = 50
+text = "Billard"
+
+[node name="Label7" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 471.0
+offset_top = 941.0
+offset_right = 620.0
+offset_bottom = 1010.0
+theme_override_font_sizes/font_size = 50
+text = "Tapis
+"
+
+[node name="Label8" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 23.0
+offset_top = 72.0
+offset_right = 172.0
+offset_bottom = 141.0
+theme_override_font_sizes/font_size = 50
+text = "Tapis
+"
