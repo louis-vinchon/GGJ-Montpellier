@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://d3ihpob6ff33s" path="res://assets/graph/ville/batiments/house_big_window.png" id="5_cl046"]
 [ext_resource type="Texture2D" uid="uid://nw75wuby4n4j" path="res://assets/graph/ville/batiments/house_flat_roof.png" id="6_qlqsq"]
 
-[node name="SmallHouse" type="Node2D"]
+[node name="BigHouse" type="Node2D"]
 
 [node name="Ground" type="Node2D" parent="."]
 position = Vector2(-302, -594)
@@ -31,8 +31,9 @@ position = Vector2(70, -626)
 texture = ExtResource("4_x2uno")
 
 [node name="BigWindow" type="Sprite2D" parent="FirstFloor"]
-position = Vector2(348, -704)
+position = Vector2(396, -707)
 texture = ExtResource("5_cl046")
+flip_h = true
 
 [node name="SecondFloor" type="Node2D" parent="."]
 
