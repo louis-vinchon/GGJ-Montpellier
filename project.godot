@@ -25,8 +25,7 @@ FlagManager="*res://3C-Felix/interactive/FlagManager.gd"
 
 directories/dch_directory={
 "cocci": "res://dialogic/characters/cocci.dch",
-"shopkeeper_1": "res://dialogic/characters/shopkeeper_1.dch",
-"test": "res://dialogic/characters/test.dch"
+"shopkeeper_1": "res://dialogic/characters/shopkeeper_1.dch"
 }
 directories/dtl_directory={
 "TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl",
