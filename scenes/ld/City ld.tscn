@@ -58,7 +58,7 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Free space 4" type="MeshInstance2D" parent="map template/Free space"]
 modulate = Color(0.290196, 0.627451, 0.235294, 1)
-position = Vector2(2134.88, 2313)
+position = Vector2(2141, 2302)
 scale = Vector2(4254.25, 505.424)
 mesh = SubResource("BoxMesh_m86x4")
 
@@ -76,8 +76,8 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Free space 5" type="MeshInstance2D" parent="map template/Free space"]
 modulate = Color(0.290196, 0.627451, 0.235294, 1)
-position = Vector2(4540.5, 3673.82)
-scale = Vector2(3547, 666.356)
+position = Vector2(4567.5, 3673.82)
+scale = Vector2(3493, 666.356)
 mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Buildings" type="Node2D" parent="map template"]
