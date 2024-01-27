@@ -1,4 +1,4 @@
-extends Object
+extends Node
 
 # This autoloaded script is meant to be a central hub for signal sharing.
 
