@@ -1,0 +1,184 @@
+[gd_scene load_steps=5 format=3 uid="uid://jurm871riq6i"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_m86x4"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_x6euf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_5w6fv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="map template" type="Node2D" parent="."]
+
+[node name="ground" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.486275, 0.486275, 0.486275, 1)
+position = Vector2(4241.5, 2663)
+scale = Vector2(8483, 5326)
+mesh = SubResource("BoxMesh_4gd7b")
+metadata/_edit_lock_ = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="map template"]
+position = Vector2(36, 321)
+scale = Vector2(314, 346.25)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="map template"]
+position = Vector2(1856, 664.437)
+scale = Vector2(684, 521.125)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="map template"]
+position = Vector2(3767, 1633)
+scale = Vector2(684, 521.125)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="map template"]
+position = Vector2(6828, 1145.22)
+scale = Vector2(684, 917.562)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="map template"]
+position = Vector2(7830, 4072)
+scale = Vector2(684, 917.562)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(599.094, 1971)
+scale = Vector2(1198.19, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(1436, 1018)
+rotation = 1.5708
+scale = Vector2(1346.38, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(1416, 3210.81)
+rotation = 1.5708
+scale = Vector2(2046, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(1433, 4530)
+rotation = 1.5708
+scale = Vector2(700.567, 535.754)
+mesh = SubResource("CapsuleMesh_x6euf")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(3492, 3299)
+rotation = 3.14159
+scale = Vector2(700.567, 535.754)
+mesh = SubResource("CapsuleMesh_x6euf")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(2956.91, 1967)
+scale = Vector2(2626.19, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(5042, 3265)
+scale = Vector2(2638.19, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(7240.5, 4610)
+scale = Vector2(1849, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(5184, 3937.38)
+rotation = 1.5708
+scale = Vector2(1508.07, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.552941, 0.352941, 0.129412, 1)
+position = Vector2(5710, 4609)
+rotation = 3.14159
+scale = Vector2(1213.48, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(4194, 1146.25)
+rotation = 1.5708
+scale = Vector2(1803.98, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(6397, 2455.71)
+rotation = 1.5708
+scale = Vector2(4424.06, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(3333.23, 323)
+rotation = 3.14159
+scale = Vector2(6282.83, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="map template"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(1428, 1952)
+scale = Vector2(606.23, 606.23)
+mesh = SubResource("SphereMesh_5w6fv")
+
+[node name="Label" type="Label" parent="map template"]
+offset_left = -70.0
+offset_top = 267.0
+offset_right = 124.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "home"
+
+[node name="Label2" type="Label" parent="map template"]
+offset_left = 1631.0
+offset_top = 597.0
+offset_right = 2077.0
+offset_bottom = 693.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "Clothes store"
+
+[node name="Label3" type="Label" parent="map template"]
+offset_left = 3572.0
+offset_top = 1577.0
+offset_right = 4018.0
+offset_bottom = 1673.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "Hair cut"
+
+[node name="Label4" type="Label" parent="map template"]
+offset_left = 6721.0
+offset_top = 1106.0
+offset_right = 7167.0
+offset_bottom = 1202.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "Bar"
+
+[node name="Label5" type="Label" parent="map template"]
+offset_left = 7630.0
+offset_top = 4003.0
+offset_right = 8076.0
+offset_bottom = 4099.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "Car wash
+"
