@@ -1,0 +1,175 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1kwsihpdmlw5"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_rns25"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1ylvy"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0c7k8"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_s2wr6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.643137, 0.643137, 0.643137, 1)
+position = Vector2(575.75, 323.75)
+scale = Vector2(1152.5, 648.5)
+mesh = SubResource("QuadMesh_rns25")
+metadata/_edit_lock_ = true
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(579, 640)
+rotation = 1.5708
+scale = Vector2(16.1488, 214.414)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1144, 121)
+rotation = 3.14159
+scale = Vector2(16.1488, 128.984)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1144, 315)
+rotation = 3.14159
+scale = Vector2(16.1488, 128.984)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1143, 502)
+rotation = 3.14159
+scale = Vector2(16.1488, 128.984)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+position = Vector2(8.00024, 470)
+rotation = 3.14159
+scale = Vector2(16.1488, 128.984)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="."]
+position = Vector2(10, 191)
+rotation = 3.14159
+scale = Vector2(16.1488, 128.984)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(766, 215)
+rotation = 3.14159
+scale = Vector2(51.0722, 426.304)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="."]
+position = Vector2(337, 81)
+rotation = 4.71239
+scale = Vector2(51.0722, 193.22)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="."]
+position = Vector2(734, 621)
+rotation = 6.28319
+scale = Vector2(51.0722, 50.5148)
+mesh = SubResource("BoxMesh_1ylvy")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(621, 87)
+rotation = 4.71239
+scale = Vector2(76.5568, 80.5789)
+mesh = SubResource("CapsuleMesh_0c7k8")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(620, 226)
+rotation = 4.71239
+scale = Vector2(76.5568, 80.5789)
+mesh = SubResource("CapsuleMesh_0c7k8")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(625, 372)
+rotation = 4.71239
+scale = Vector2(76.5568, 80.5789)
+mesh = SubResource("CapsuleMesh_0c7k8")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1000, 123)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1006, 317)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1006, 317)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="."]
+modulate = Color(0.858824, 0.67451, 0.482353, 1)
+position = Vector2(1008, 499)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="."]
+position = Vector2(105, 473)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="."]
+position = Vector2(104, 189)
+rotation = 4.71239
+scale = Vector2(80, 80)
+mesh = SubResource("SphereMesh_s2wr6")
+
+[node name="Label6" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 809.0
+offset_top = 570.0
+offset_right = 1043.0
+offset_bottom = 639.0
+theme_override_font_sizes/font_size = 50
+text = "optionnel"
+
+[node name="Label7" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 557.0
+offset_top = 118.0
+offset_right = 791.0
+offset_bottom = 187.0
+theme_override_font_sizes/font_size = 50
+text = "Lavabo"
+
+[node name="Label8" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 885.0
+offset_top = 156.0
+offset_right = 1137.0
+offset_bottom = 297.0
+theme_override_font_sizes/font_size = 50
+text = "Poste de coiffure"
+autowrap_mode = 2
+
+[node name="Label9" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 32.0
+offset_top = 258.0
+offset_right = 284.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 50
+text = "Poste de coiffure"
+autowrap_mode = 2
