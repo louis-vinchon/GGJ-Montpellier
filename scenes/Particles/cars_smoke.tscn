@@ -72,7 +72,6 @@ turbulence_influence_over_life = SubResource("CurveTexture_kypia")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 show_behind_parent = true
-position = Vector2(757, 252)
 amount = 30
 process_material = SubResource("ParticleProcessMaterial_mrxju")
 texture = ExtResource("1_sa3q5")
