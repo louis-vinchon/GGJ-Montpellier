@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://jurm871riq6i"]
+[gd_scene load_steps=6 format=3 uid="uid://jurm871riq6i"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3ytf3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_m86x4"]
 
@@ -19,125 +21,236 @@ scale = Vector2(8483, 5326)
 mesh = SubResource("BoxMesh_4gd7b")
 metadata/_edit_lock_ = true
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="map template"]
-position = Vector2(36, 321)
-scale = Vector2(314, 346.25)
+[node name="Dead end" type="Node2D" parent="map template"]
+
+[node name="dead end 1" type="MeshInstance2D" parent="map template/Dead end"]
+modulate = Color(1, 1, 0.2, 1)
+position = Vector2(1426.18, 4460)
+rotation = -1.5708
+scale = Vector2(1758.91, 1428.17)
+mesh = SubResource("CapsuleMesh_3ytf3")
+
+[node name="Dead end 2" type="MeshInstance2D" parent="map template/Dead end"]
+modulate = Color(1, 1, 0.2, 1)
+position = Vector2(3471, 3265)
+scale = Vector2(1301.29, 719)
+mesh = SubResource("CapsuleMesh_3ytf3")
+
+[node name="Free space" type="Node2D" parent="map template"]
+
+[node name="Free space 1" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(676, 647.305)
+scale = Vector2(1354, 505.391)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D2" type="MeshInstance2D" parent="map template"]
-position = Vector2(1856, 664.437)
-scale = Vector2(684, 521.125)
+[node name="Free space 3" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(5295, 671.152)
+scale = Vector2(2032, 543.695)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D3" type="MeshInstance2D" parent="map template"]
-position = Vector2(3767, 1633)
-scale = Vector2(684, 521.125)
+[node name="Free space 7" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(6639.88, 4947.5)
+scale = Vector2(3058.25, 517)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D17" type="MeshInstance2D" parent="map template"]
-position = Vector2(6828, 1145.22)
-scale = Vector2(684, 917.562)
+[node name="Free space 4" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(2134.88, 2313)
+scale = Vector2(4254.25, 505.424)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D18" type="MeshInstance2D" parent="map template"]
-position = Vector2(7830, 4072)
-scale = Vector2(684, 917.562)
+[node name="Free space 2" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(3159, 664.609)
+scale = Vector2(1922, 522.781)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D5" type="MeshInstance2D" parent="map template"]
+[node name="Free space 6" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(1424, 4948)
+scale = Vector2(2844, 779.424)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Free space 5" type="MeshInstance2D" parent="map template/Free space"]
+modulate = Color(0.290196, 0.627451, 0.235294, 1)
+position = Vector2(4540.5, 3673.82)
+scale = Vector2(3547, 666.356)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Buildings" type="Node2D" parent="map template"]
+
+[node name="building 5" type="MeshInstance2D" parent="map template/Buildings"]
+position = Vector2(2920.5, 1403.72)
+scale = Vector2(1009, 964.562)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="building 4" type="MeshInstance2D" parent="map template/Buildings"]
+position = Vector2(5806, 2056.36)
+scale = Vector2(1009, 2227.28)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="building 3" type="MeshInstance2D" parent="map template/Buildings"]
+position = Vector2(693.25, 1397)
+scale = Vector2(1386.5, 1010.64)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="building 2" type="MeshInstance2D" parent="map template/Buildings"]
+position = Vector2(6977.75, 2616.18)
+scale = Vector2(996.5, 2015.64)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="building 1" type="MeshInstance2D" parent="map template/Buildings"]
+position = Vector2(3766.63, 1149.57)
+scale = Vector2(684.75, 459.141)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Mix space" type="Node2D" parent="map template"]
+
+[node name="Mix space 2" type="MeshInstance2D" parent="map template/Mix space"]
+modulate = Color(0.0352941, 0.6, 0.709804, 1)
+position = Vector2(1966.5, 1404.5)
+scale = Vector2(899, 959)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Mix space 1" type="MeshInstance2D" parent="map template/Mix space"]
+modulate = Color(0.0352941, 0.6, 0.709804, 1)
+position = Vector2(6986.25, 4083.25)
+scale = Vector2(1021.5, 933.5)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="unnecessary Roads" type="Node2D" parent="map template"]
+
+[node name="UnRoad 7" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(599.094, 1971)
 scale = Vector2(1198.19, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D6" type="MeshInstance2D" parent="map template"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(1436, 1018)
-rotation = 1.5708
-scale = Vector2(1346.38, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="MeshInstance2D9" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 6" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(1416, 3210.81)
 rotation = 1.5708
 scale = Vector2(2046, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D12" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 5" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(1433, 4530)
 rotation = 1.5708
 scale = Vector2(700.567, 535.754)
 mesh = SubResource("CapsuleMesh_x6euf")
 
-[node name="MeshInstance2D14" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 4" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(3492, 3299)
-rotation = 3.14159
+rotation = -3.14159
 scale = Vector2(700.567, 535.754)
 mesh = SubResource("CapsuleMesh_x6euf")
 
-[node name="MeshInstance2D10" type="MeshInstance2D" parent="map template"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(2956.91, 1967)
-scale = Vector2(2626.19, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="MeshInstance2D13" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 3" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(5042, 3265)
 scale = Vector2(2638.19, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D15" type="MeshInstance2D" parent="map template"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(7240.5, 4610)
-scale = Vector2(1849, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="MeshInstance2D16" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 2" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(5184, 3937.38)
 rotation = 1.5708
 scale = Vector2(1508.07, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D19" type="MeshInstance2D" parent="map template"]
+[node name="UnRoad 1" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(5710, 4609)
-rotation = 3.14159
+rotation = -3.14159
 scale = Vector2(1213.48, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D11" type="MeshInstance2D" parent="map template"]
+[node name="Roads" type="Node2D" parent="map template"]
+
+[node name="Road 5" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(2956.91, 1967)
+scale = Vector2(2626.19, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 4" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(7240.5, 4610)
+scale = Vector2(1849, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 3" type="MeshInstance2D" parent="map template/Roads"]
 modulate = Color(0.152941, 0.152941, 0.152941, 1)
 position = Vector2(4194, 1146.25)
 rotation = 1.5708
 scale = Vector2(1803.98, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D8" type="MeshInstance2D" parent="map template"]
+[node name="Road 2" type="MeshInstance2D" parent="map template/Roads"]
 modulate = Color(0.152941, 0.152941, 0.152941, 1)
 position = Vector2(6397, 2455.71)
 rotation = 1.5708
 scale = Vector2(4424.06, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D7" type="MeshInstance2D" parent="map template"]
+[node name="Road 1" type="MeshInstance2D" parent="map template/Roads"]
 modulate = Color(0.152941, 0.152941, 0.152941, 1)
 position = Vector2(3333.23, 323)
-rotation = 3.14159
+rotation = -3.14159
 scale = Vector2(6282.83, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
-[node name="MeshInstance2D4" type="MeshInstance2D" parent="map template"]
+[node name="traffic roundabout" type="MeshInstance2D" parent="map template/Roads"]
 modulate = Color(0.152941, 0.152941, 0.152941, 1)
 position = Vector2(1428, 1952)
 scale = Vector2(606.23, 606.23)
 mesh = SubResource("SphereMesh_5w6fv")
 
-[node name="Label" type="Label" parent="map template"]
+[node name="Road 6" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(1436, 1018)
+rotation = 1.5708
+scale = Vector2(1346.38, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="point d\'intérêt" type="Node2D" parent="map template"]
+
+[node name="home building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
+modulate = Color(1, 0.231373, 1, 1)
+position = Vector2(36, 321)
+scale = Vector2(314, 346.25)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Clothe store building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
+modulate = Color(1, 0.231373, 1, 1)
+position = Vector2(1856, 664.437)
+scale = Vector2(684, 521.125)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="hair cut building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
+modulate = Color(1, 0.231373, 1, 1)
+position = Vector2(3767, 1633)
+scale = Vector2(684, 521.125)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Bar building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
+modulate = Color(1, 0.231373, 1, 1)
+position = Vector2(6828, 1145.22)
+scale = Vector2(684, 917.562)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Car wash building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
+modulate = Color(1, 0.231373, 1, 1)
+position = Vector2(7830, 4072)
+scale = Vector2(684, 917.562)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Home" type="Label" parent="map template/point d\'intérêt"]
 offset_left = -70.0
 offset_top = 267.0
 offset_right = 124.0
@@ -146,16 +259,16 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "home"
 
-[node name="Label2" type="Label" parent="map template"]
+[node name="Clothe store" type="Label" parent="map template/point d\'intérêt"]
 offset_left = 1631.0
 offset_top = 597.0
 offset_right = 2077.0
 offset_bottom = 693.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
-text = "Clothes store"
+text = "Clothe store"
 
-[node name="Label3" type="Label" parent="map template"]
+[node name="Hair cut" type="Label" parent="map template/point d\'intérêt"]
 offset_left = 3572.0
 offset_top = 1577.0
 offset_right = 4018.0
@@ -164,7 +277,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Hair cut"
 
-[node name="Label4" type="Label" parent="map template"]
+[node name="Bar" type="Label" parent="map template/point d\'intérêt"]
 offset_left = 6721.0
 offset_top = 1106.0
 offset_right = 7167.0
@@ -173,7 +286,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Bar"
 
-[node name="Label5" type="Label" parent="map template"]
+[node name="Carwash" type="Label" parent="map template/point d\'intérêt"]
 offset_left = 7630.0
 offset_top = 4003.0
 offset_right = 8076.0
