@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://dedqgnpy4am3m"]
+
+[ext_resource type="Texture2D" uid="uid://betxfuy7sb787" path="res://assets/graph/ville/batiments/house_left_side_ground_floor.png" id="1_ay6dx"]
+[ext_resource type="Texture2D" uid="uid://dprumrysg5d8w" path="res://assets/graph/ville/batiments/house_wood_door.png" id="2_nnx8q"]
+[ext_resource type="Texture2D" uid="uid://c2e3eop83dar2" path="res://assets/graph/ville/batiments/house_small_window.png" id="3_d1q73"]
+[ext_resource type="Texture2D" uid="uid://dfwbateyjhugv" path="res://assets/graph/ville/batiments/house_left_side_first_floor.png" id="4_x2uno"]
+[ext_resource type="Texture2D" uid="uid://d3ihpob6ff33s" path="res://assets/graph/ville/batiments/house_big_window.png" id="5_cl046"]
+[ext_resource type="Texture2D" uid="uid://nw75wuby4n4j" path="res://assets/graph/ville/batiments/house_flat_roof.png" id="6_qlqsq"]
+
+[node name="SmallHouse" type="Node2D"]
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2(-302, -594)
+
+[node name="Wall" type="Sprite2D" parent="Ground"]
+position = Vector2(371, 470)
+texture = ExtResource("1_ay6dx")
+
+[node name="Door" type="Sprite2D" parent="Ground"]
+position = Vector2(740, 473)
+texture = ExtResource("2_nnx8q")
+
+[node name="Window" type="Sprite2D" parent="Ground"]
+position = Vector2(95, 392)
+texture = ExtResource("3_d1q73")
+
+[node name="FirstFloor" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(70, -626)
+texture = ExtResource("4_x2uno")
+
+[node name="BigWindow" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(348, -704)
+texture = ExtResource("5_cl046")
+
+[node name="SecondFloor" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(70, -1135)
+texture = ExtResource("4_x2uno")
+
+[node name="BigWindow" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(-134, -1207)
+texture = ExtResource("5_cl046")
+
+[node name="Roof" type="Node2D" parent="."]
+position = Vector2(-296, -1024)
+
+[node name="Roof" type="Sprite2D" parent="Roof"]
+position = Vector2(367, -616)
+texture = ExtResource("6_qlqsq")
