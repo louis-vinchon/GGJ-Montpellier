@@ -27,8 +27,8 @@ directories/dch_directory={
 "shopkeeper_1": "res://dialogic/characters/shopkeeper_1.dch"
 }
 directories/dtl_directory={
-"shop1_timeline": "res://dialogic/timelines/shop1_timeline.dtl",
-"TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl"
+"TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl",
+"shop1_timeline": "res://dialogic/timelines/shop1_timeline.dtl"
 }
 layout/style_list=[]
 layout/default_style="Default"

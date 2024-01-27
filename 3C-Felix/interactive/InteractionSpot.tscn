@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="1_gvr7q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g38t3"]
-size = Vector2(128, 128)
+size = Vector2(118.857, 128)
 
 [node name="InteractionSpot" type="StaticBody2D" groups=["interaction"]]
 script = ExtResource("1_05yas")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.76837e-07, 0)
 scale = Vector2(0.21875, 0.21875)
 shape = SubResource("RectangleShape2D_g38t3")
 
