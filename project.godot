@@ -29,7 +29,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl",
-"shop1_timeline": "res://dialogic/timelines/shop1_timeline.dtl"
+"bar": "res://dialogic/timelines/bar_timeline.dtl",
+"carwash_timeline": "res://dialogic/timelines/carwash_timeline.dtl",
+"hairsalon_timeline": "res://dialogic/timelines/hairsalon_timeline.dtl",
+"house_timeline": "res://dialogic/timelines/house_timeline.dtl",
+"shop1_timeline": "res://dialogic/timelines/clothesStore_timeline.dtl"
 }
 layout/style_list=[]
 layout/default_style="Default"
