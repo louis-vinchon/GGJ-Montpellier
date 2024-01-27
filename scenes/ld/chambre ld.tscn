@@ -1,0 +1,115 @@
+[gd_scene load_steps=2 format=3 uid="uid://fenj4krbmwuf"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_4lfvb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.643137, 0.643137, 0.643137, 1)
+position = Vector2(575.75, 323.75)
+scale = Vector2(1152.5, 648.5)
+mesh = SubResource("QuadMesh_4lfvb")
+metadata/_edit_lock_ = true
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color(0.913725, 0.643137, 0.937255, 1)
+position = Vector2(528.717, 278)
+scale = Vector2(736.566, 476)
+mesh = SubResource("QuadMesh_4lfvb")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(280, 521)
+scale = Vector2(560.125, 254.125)
+mesh = SubResource("QuadMesh_4lfvb")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+position = Vector2(1000, 592)
+scale = Vector2(114.531, 112.531)
+mesh = SubResource("QuadMesh_4lfvb")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+position = Vector2(1141, 176)
+scale = Vector2(18.2656, 222.133)
+mesh = SubResource("QuadMesh_4lfvb")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+position = Vector2(196.867, 54.8672)
+scale = Vector2(392.266, 112.266)
+mesh = SubResource("QuadMesh_4lfvb")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 111.0
+offset_top = 17.0
+offset_right = 275.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 50
+text = "Bureau"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 145.0
+offset_top = 428.0
+offset_right = 337.0
+offset_bottom = 497.0
+theme_override_font_sizes/font_size = 50
+text = "lit cassé"
+
+[node name="Label4" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 917.0
+offset_top = 551.0
+offset_right = 1109.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 50
+text = "Lavabo"
+
+[node name="Label5" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 997.0
+offset_top = 64.0
+offset_right = 1146.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 50
+text = "Porte
+"
+
+[node name="Label6" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 453.0
+offset_top = 162.0
+offset_right = 602.0
+offset_bottom = 231.0
+theme_override_font_sizes/font_size = 50
+text = "Tapis
+"
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 45.0
+offset_top = 494.0
+offset_right = 480.0
+offset_bottom = 581.0
+theme_override_font_sizes/font_size = 30
+text = "lit typique en bois mais cassé car ... trop lourd"
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 332.0
+offset_top = 237.0
+offset_right = 767.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 30
+text = "Tapis pleinde trace de pneu"
+autowrap_mode = 2
+
+[node name="Label8" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 31.0
+offset_top = 72.0
+offset_right = 377.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 20
+text = "Pas sûr d'avoir la place de le mettre"
+autowrap_mode = 2
