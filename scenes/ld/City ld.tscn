@@ -1,9 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://jurm871riq6i"]
-
-[ext_resource type="PackedScene" uid="uid://dedqgnpy4am3m" path="res://scenes/buildings/big_house.tscn" id="1_lbnyh"]
-[ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="2_bjfwf"]
-[ext_resource type="PackedScene" uid="uid://0ojhmimbyk1u" path="res://scenes/buildings/medium_house.tscn" id="3_q6gv3"]
-[ext_resource type="PackedScene" uid="uid://cnbbaokg0pjkj" path="res://scenes/buildings/new_house.tscn" id="4_3brt8"]
+[gd_scene load_steps=6 format=3 uid="uid://jurm871riq6i"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
 
@@ -16,10 +11,8 @@
 [sub_resource type="SphereMesh" id="SphereMesh_5w6fv"]
 
 [node name="Node2D" type="Node2D"]
-scale = Vector2(0.05, 0.05)
 
 [node name="map template" type="Node2D" parent="."]
-scale = Vector2(4, 4)
 
 [node name="ground" type="MeshInstance2D" parent="map template"]
 modulate = Color(0.486275, 0.486275, 0.486275, 1)
@@ -302,24 +295,3 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Car wash
 "
-
-[node name="BigHouse" parent="." instance=ExtResource("1_lbnyh")]
-position = Vector2(9101, 7038)
-
-[node name="SmallHouse" parent="." instance=ExtResource("2_bjfwf")]
-position = Vector2(12361, 4989)
-
-[node name="MediumHouse" parent="." instance=ExtResource("3_q6gv3")]
-position = Vector2(3497, 7082)
-
-[node name="BigHouse2" parent="." instance=ExtResource("1_lbnyh")]
-position = Vector2(7644, 10193)
-
-[node name="MediumHouse2" parent="." instance=ExtResource("3_q6gv3")]
-position = Vector2(1915, 4640)
-
-[node name="SmallHouse2" parent="." instance=ExtResource("2_bjfwf")]
-position = Vector2(3099, 14706)
-
-[node name="NewHouse" parent="." instance=ExtResource("4_3brt8")]
-position = Vector2(9157, 13653)

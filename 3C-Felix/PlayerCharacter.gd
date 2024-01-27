@@ -3,8 +3,6 @@ extends RigidBody2D
 @export var accelerationPower : float = 3000
 @export var rotationSpeed : float = 1000
 
-@onready var audiostreamplayer :AudioStreamPlayer = $AudioStreamPlayer
-
 var acceleration : Vector2 = Vector2(0,0)
 var RotationIncreased : float = 0
 
@@ -43,17 +41,9 @@ func _process(delta):
 	
 	acceleration = transform.x * forwardInput * accelerationPower * delta
 	
-	play_sounds()
+	pass
 
-func play_sounds():
-	if linear_velocity.length() > 0:
-		# Play sound.
-		#audiostreamplayer.play()
-		#audiostreamplayer.stream = load("path to other mp3")
-		pass
-	else:
-		# audiostreamplayer.stop()
-		pass
+
 
 
 func _physics_process(delta):
