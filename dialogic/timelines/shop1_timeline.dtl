@@ -1,0 +1,11 @@
+join shopkeeper_1 3 [animation="Slide In Left"]
+shopkeeper_1: test
+join cocci 1 [animation="Slide In Left"]
+cocci: Vrrr, vrr!
+shopkeeper_1: Bonjour miss Cocci!
+- option 1
+- option 2
+shopkeeper_1: A
+cocci: B
+shopkeeper_1: C
+[end_timeline]

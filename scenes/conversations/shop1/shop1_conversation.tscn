@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://nltu51vys8to"]
+[gd_scene load_steps=3 format=3 uid="uid://nltu51vys8to"]
 
 [ext_resource type="Script" path="res://scenes/conversations/shop1/shop1_conversation.gd" id="1_ggcnf"]
+[ext_resource type="PackedScene" uid="uid://de7b3twrsryhg" path="res://scenes/components/conversation/conversation.tscn" id="2_kby7o"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ggcnf")
+
+[node name="Conversation" parent="." instance=ExtResource("2_kby7o")]
+dialogic_timeline = "shop1_timeline"
