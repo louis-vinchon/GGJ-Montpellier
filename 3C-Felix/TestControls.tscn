@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6ptp4vk18lb5"]
+[gd_scene load_steps=7 format=3 uid="uid://b6ptp4vk18lb5"]
 
 [ext_resource type="PackedScene" uid="uid://dj6br5xyalht" path="res://3C-Felix/PlayerCharacter.tscn" id="1_d8nhi"]
 [ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="2_dw05f"]
 [ext_resource type="PackedScene" uid="uid://cmyyqdmi0y3or" path="res://3C-Felix/interactive/NPC.tscn" id="3_csqra"]
+[ext_resource type="PackedScene" uid="uid://cf2ebwo6s1y34" path="res://3C-Felix/interactive/Door.tscn" id="4_17q5t"]
+[ext_resource type="PackedScene" uid="uid://bw1na35s1yybj" path="res://3C-Felix/interactive/ClutterProps.tscn" id="5_euobo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4b2c"]
 size = Vector2(122, 122)
@@ -66,3 +68,21 @@ shape = SubResource("RectangleShape2D_n4b2c")
 [node name="Npc" parent="." instance=ExtResource("3_csqra")]
 position = Vector2(460, 144)
 selectedDialogue = "TestTimeline"
+
+[node name="Door" parent="." instance=ExtResource("4_17q5t")]
+position = Vector2(450, 220)
+
+[node name="ClutterProps" parent="." instance=ExtResource("5_euobo")]
+position = Vector2(290, -21)
+
+[node name="ClutterProps2" parent="." instance=ExtResource("5_euobo")]
+position = Vector2(315, -23)
+
+[node name="ClutterProps3" parent="." instance=ExtResource("5_euobo")]
+position = Vector2(354, -20)
+
+[node name="ClutterProps4" parent="." instance=ExtResource("5_euobo")]
+position = Vector2(396, -2)
+
+[node name="ClutterProps5" parent="." instance=ExtResource("5_euobo")]
+position = Vector2(447, 15)
