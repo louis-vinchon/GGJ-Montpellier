@@ -22,13 +22,17 @@ GGJTypes="*res://scripts/autoloads/types.gd"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"cocci": "res://dialogic/characters/cocci.dch",
+"shopkeeper_1": "res://dialogic/characters/shopkeeper_1.dch"
+}
 directories/dtl_directory={
+"shop1_timeline": "res://dialogic/timelines/shop1_timeline.dtl",
 "TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl"
 }
-glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="Default"
+glossary/default_case_sensitive=true
 variables={}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
