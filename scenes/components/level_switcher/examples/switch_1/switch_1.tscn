@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2yxs13j1ew1s"]
+
+[ext_resource type="Script" path="res://scenes/components/level_switcher/level_switcher.gd" id="1_gelgf"]
+[ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="2_1lnn4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j6et"]
+size = Vector2(127, 128)
+
+[node name="Switch1" type="Area2D"]
+script = ExtResource("1_gelgf")
+next_level = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_3j6et")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1lnn4")
