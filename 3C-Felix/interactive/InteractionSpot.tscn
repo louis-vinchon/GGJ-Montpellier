@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://br57p28vhxrb3"]
 
-[ext_resource type="Script" path="res://3C-Felix/InteractionSpot.gd" id="1_05yas"]
+[ext_resource type="Script" path="res://3C-Felix/interactive/InteractionSpot.gd" id="1_05yas"]
 [ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="1_gvr7q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g38t3"]

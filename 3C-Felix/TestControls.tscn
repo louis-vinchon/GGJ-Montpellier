@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dj6br5xyalht" path="res://3C-Felix/PlayerCharacter.tscn" id="1_d8nhi"]
 [ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="2_dw05f"]
-[ext_resource type="PackedScene" uid="uid://br57p28vhxrb3" path="res://3C-Felix/InteractionSpot.tscn" id="3_a7yew"]
+[ext_resource type="PackedScene" uid="uid://cmyyqdmi0y3or" path="res://3C-Felix/interactive/NPC.tscn" id="3_csqra"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4b2c"]
 size = Vector2(122, 122)
@@ -63,5 +63,6 @@ texture = ExtResource("2_dw05f")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
 shape = SubResource("RectangleShape2D_n4b2c")
 
-[node name="InteractionSpot" parent="." instance=ExtResource("3_a7yew")]
-position = Vector2(580, 123)
+[node name="Npc" parent="." instance=ExtResource("3_csqra")]
+position = Vector2(460, 144)
+selectedDialogue = "TestTimeline"

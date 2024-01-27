@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmyyqdmi0y3or"]
+
+[ext_resource type="Script" path="res://3C-Felix/interactive/NPC.gd" id="1_yis0d"]
+[ext_resource type="PackedScene" uid="uid://br57p28vhxrb3" path="res://3C-Felix/interactive/InteractionSpot.tscn" id="2_l4fcc"]
+
+[node name="Npc" type="Node2D"]
+script = ExtResource("1_yis0d")
+
+[node name="InteractionSpot" parent="." instance=ExtResource("2_l4fcc")]
+
+[connection signal="interactionStarted" from="InteractionSpot" to="." method="_on_interaction_spot_interaction_started"]
