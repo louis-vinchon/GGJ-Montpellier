@@ -3,7 +3,7 @@
 class_name LevelSwitcher
 extends Area2D
 
-@export var next_level :Types.Level
+@export var next_level :GGJTypes.Level
 @export var next_level_spawn :String
 
 func _get_configuration_warnings():
@@ -16,8 +16,8 @@ func _get_configuration_warnings():
 	
 func _ready():
 	if !next_level_spawn:
-		next_level_spawn = Types.DEFAULT_SPAWN
+		next_level_spawn = GGJTypes.DEFAULT_SPAWN
 
 func _on_body_entered(body):
 	#if body is Player:
-	SignalBus.switch_level.emit(next_level, next_level_spawn)
+	GGJSignalBus.switch_level.emit(next_level, next_level_spawn)

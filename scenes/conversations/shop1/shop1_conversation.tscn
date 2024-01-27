@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nltu51vys8to"]
+
+[ext_resource type="Script" path="res://scenes/conversations/shop1/shop1_conversation.gd" id="1_ggcnf"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ggcnf")

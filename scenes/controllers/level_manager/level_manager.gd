@@ -3,18 +3,18 @@ extends Node2D
 var city_level :Node2D
 var current_level :Node2D
 var levels = {
-	 Types.Level.City: "" # TODO
+	 GGJTypes.Level.City: "" # TODO
 }
 
 func _ready():
-	SignalBus.switch_level.connect(switch_level)
+	GGJSignalBus.switch_level.connect(switch_level)
 	
-	if !levels[Types.Level.City]:
+	if !levels[GGJTypes.Level.City]:
 		push_error("No main city level defined.")
-		var city_level = load(levels[Types.Level.City]).instantiate()
+		var city_level = load(levels[GGJTypes.Level.City]).instantiate()
 		current_level = current_level
 
-func switch_level(next_level: Types.Level, spawn: String = Types.DEFAULT_SPAWN):
+func switch_level(next_level: GGJTypes.Level, spawn: String = GGJTypes.DEFAULT_SPAWN):
 	# Fade out the current level.
 	var tween = get_tree().create_tween()
 	tween.tween_property(current_level, "modulate", Color.BLACK, 0.65)
