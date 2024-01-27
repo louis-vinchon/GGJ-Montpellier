@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 GGJSignalBus="*res://scripts/autoloads/signal_bus.gd"
 GGJTypes="*res://scripts/autoloads/types.gd"
+FlagManager="*res://3C-Felix/interactive/FlagManager.gd"
 
 [dialogic]
 
@@ -33,7 +34,12 @@ directories/dtl_directory={
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"WashVar": "",
+"barVar": "",
+"coiffeurVar": "",
+"vetementsVar": ""
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
