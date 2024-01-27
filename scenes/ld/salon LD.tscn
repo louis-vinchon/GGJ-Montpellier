@@ -45,12 +45,12 @@ scale = Vector2(17.25, 226.875)
 mesh = SubResource("BoxMesh_osman")
 
 [node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
-position = Vector2(719, 197)
-scale = Vector2(-133.25, 396.875)
+position = Vector2(719, 197.496)
+scale = Vector2(-133.25, 395.883)
 mesh = SubResource("BoxMesh_osman")
 
 [node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
-position = Vector2(785, 57)
+position = Vector2(785, 56)
 rotation = 1.5708
 scale = Vector2(-113.25, 264.875)
 mesh = SubResource("BoxMesh_osman")
