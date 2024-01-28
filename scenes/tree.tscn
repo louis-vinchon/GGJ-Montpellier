@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8efp0278qq7n"]
+[gd_scene load_steps=3 format=3 uid="uid://c1x6uip34tf3b"]
 
 [ext_resource type="Texture2D" uid="uid://bku3kvko26jw6" path="res://assets/graph/ville/decors/tree.png" id="1_hh0rm"]
 
-[node name="Tree" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_rwt1p"]
+radius = 213.061
+
+[node name="Tree" type="StaticBody2D"]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(0, 312)
 texture = ExtResource("1_hh0rm")
+offset = Vector2(0, -330)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.99998, 312)
+rotation = -2.68257
+skew = 0.617847
+shape = SubResource("CircleShape2D_rwt1p")
