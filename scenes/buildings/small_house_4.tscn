@@ -19,6 +19,22 @@ position = Vector2(-216, -592)
 position = Vector2(371, 470)
 texture = ExtResource("1_k07p5")
 
+[node name="BrickDark" type="Sprite2D" parent="Ground"]
+position = Vector2(68, 383)
+texture = ExtResource("3_xx2t2")
+
+[node name="BrickLight" type="Sprite2D" parent="Ground"]
+position = Vector2(-71, 281)
+texture = ExtResource("6_ea5r5")
+
+[node name="BrickOrange" type="Sprite2D" parent="Ground"]
+position = Vector2(-19, 487)
+texture = ExtResource("9_yi4uj")
+
+[node name="HouseBigWindow" type="Sprite2D" parent="Ground"]
+position = Vector2(687, 384)
+texture = ExtResource("7_0iq20")
+
 [node name="Roof" type="Node2D" parent="."]
 position = Vector2(-216, -601)
 
@@ -26,33 +42,17 @@ position = Vector2(-216, -601)
 position = Vector2(371, -32)
 texture = ExtResource("2_b5wgj")
 
-[node name="BrickDark" type="Sprite2D" parent="."]
-position = Vector2(-148, -209)
-texture = ExtResource("3_xx2t2")
-
-[node name="BrickLightSided" type="Sprite2D" parent="."]
-position = Vector2(-579, -641)
+[node name="BrickLightSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-363, -40)
 texture = ExtResource("4_omkpg")
 
-[node name="BrickOrangeSided" type="Sprite2D" parent="."]
-position = Vector2(-552, -549)
+[node name="BrickOrangeSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-336, 52)
 texture = ExtResource("5_jclq2")
 
-[node name="BrickLight" type="Sprite2D" parent="."]
-position = Vector2(-287, -311)
-texture = ExtResource("6_ea5r5")
-
-[node name="HouseBigWindow" type="Sprite2D" parent="."]
-position = Vector2(471, -208)
-texture = ExtResource("7_0iq20")
-
-[node name="HouseSmallWindowSided" type="Sprite2D" parent="."]
-position = Vector2(-569, -308)
+[node name="HouseSmallWindowSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-353, 293)
 texture = ExtResource("8_77j7i")
-
-[node name="BrickOrange" type="Sprite2D" parent="."]
-position = Vector2(-235, -105)
-texture = ExtResource("9_yi4uj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)

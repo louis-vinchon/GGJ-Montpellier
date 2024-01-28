@@ -25,6 +25,14 @@ texture = ExtResource("1_5ebwm")
 position = Vector2(161, 422)
 texture = ExtResource("2_45rhr")
 
+[node name="BrickDark" type="Sprite2D" parent="Ground"]
+position = Vector2(860, 453)
+texture = ExtResource("6_s0mbx")
+
+[node name="BrickOrange" type="Sprite2D" parent="Ground"]
+position = Vector2(987, 422)
+texture = ExtResource("7_6xck5")
+
 [node name="FirstFloor" type="Node2D" parent="."]
 
 [node name="Wall" type="Sprite2D" parent="FirstFloor"]
@@ -36,44 +44,36 @@ position = Vector2(523, -620)
 texture = ExtResource("4_mojwy")
 flip_h = true
 
+[node name="HouseSmallWindowSided" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-564, -245)
+texture = ExtResource("11_2k8ja")
+
+[node name="BrickLight" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-165, -680)
+texture = ExtResource("10_xmmok")
+
+[node name="BrickOrange2" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-111, -615)
+texture = ExtResource("7_6xck5")
+
+[node name="BrickDarkSided2" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-536, -716)
+texture = ExtResource("8_6t86q")
+
+[node name="BrickLightSided" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-556, -797)
+texture = ExtResource("9_xr3vu")
+
+[node name="BrickLightSided2" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-592, -771)
+texture = ExtResource("9_xr3vu")
+
 [node name="Roof" type="Node2D" parent="."]
 position = Vector2(-209, -1083)
 
 [node name="HouseOrangeRoof" type="Sprite2D" parent="Roof"]
 position = Vector2(364, -62)
 texture = ExtResource("5_ffwde")
-
-[node name="BrickDark" type="Sprite2D" parent="."]
-position = Vector2(644, -139)
-texture = ExtResource("6_s0mbx")
-
-[node name="BrickOrange" type="Sprite2D" parent="."]
-position = Vector2(771, -170)
-texture = ExtResource("7_6xck5")
-
-[node name="BrickDarkSided2" type="Sprite2D" parent="."]
-position = Vector2(-536, -716)
-texture = ExtResource("8_6t86q")
-
-[node name="BrickLightSided" type="Sprite2D" parent="."]
-position = Vector2(-556, -797)
-texture = ExtResource("9_xr3vu")
-
-[node name="BrickLightSided2" type="Sprite2D" parent="."]
-position = Vector2(-592, -771)
-texture = ExtResource("9_xr3vu")
-
-[node name="BrickLight" type="Sprite2D" parent="."]
-position = Vector2(-165, -680)
-texture = ExtResource("10_xmmok")
-
-[node name="BrickOrange2" type="Sprite2D" parent="."]
-position = Vector2(-111, -615)
-texture = ExtResource("7_6xck5")
-
-[node name="HouseSmallWindowSided" type="Sprite2D" parent="."]
-position = Vector2(-564, -245)
-texture = ExtResource("11_2k8ja")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)
