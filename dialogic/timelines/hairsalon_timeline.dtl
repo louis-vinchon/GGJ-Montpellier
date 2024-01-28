@@ -1,15 +1,19 @@
 join cocci 1
-[voice volume="0.0"]
+[sound path="res://assets/audio/Vox_Narrator/son20.wav" volume="0.0"]
+[wait time="2.0"]
 join hairstylist 1
 hairstylist: Bonjour et bienvenue dans le salon de coiffure “Éclaté Part’hair” !
 hairstylist: Que puis-je pour vous aujourd’hui ?
-[voice volume="0.0"]
+[sound path="res://assets/audio/Vox_Narrator/son21.wav" volume="0.0"]
+[wait time="7.0"]
 cocci: (Vroum ?)
 - A
 	[sound volume="0.0"]
 - B
 	[sound volume="0.0"]
-[voice volume="0.0"]
+[wait time="1.0"]
+[sound path="res://assets/audio/Vox_Narrator/son22.wav" volume="0.0"]
+[wait time="3.0"]
 hairstylist: Très bien je vous fais ça tout de suite !
 hairstylist: Installez vous j’arrive.
 leave hairstylist
