@@ -1,0 +1,30 @@
+join cocci 1
+[voice volume="0.0"]
+join hairstylist 1
+hairstylist: Bonjour et bienvenue dans le salon de coiffure “Éclaté Part’hair” !
+hairstylist: Que puis-je pour vous aujourd’hui ?
+[voice volume="0.0"]
+cocci: <Empty Text Event>
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+[voice volume="0.0"]
+hairstylist: Très bien je vous fais ça tout de suite !\
+
+hairstylist: Installez vous j’arrive.
+leave hairstylist
+leave cocci
+# A FINIR
+join cocci 1
+[wait time="1.0"]
+join hairstylist 1
+hairstylist: Allez mettons nous au travail ! 
+Mais attendez...
+hairstylist: Vous n'avez pas de cheveux !?
+[wait time="0.5"]
+En plus t’es beau comme un camion comme ça, assume ton crâne, prend confiance...
+[wait time="1.0"]
+hairstylist: ... et sors de mon salon...
+leave cocci
+[end_timeline]

@@ -1,0 +1,34 @@
+[voice volume="0.0"]
+[sound volume="0.0"]
+join cocci 1
+cocci: (Vroum ?)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+join Renault 1
+Renault: OUI ALLO ?\
+Renault: COCCI T’ES CHAUD D’ALLER AU BAR POUR BOIRE UN COUP ?
+Renault: ILS ORGANISENT UN RALLY ICI !
+Renault: EN TOUT CAS MOI JE SUIS CHAUD !
+[sound volume="0.0"]
+[sound volume="0.0"]
+VIENS CA VA ETRE COOL JE T’ATTEND D’ICI UNE HEURE HEIN CA ROULE POUR TOI ?
+cocci: (Vroum ?)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+Renault: OK COOL !
+Renault: SI TU VIENS PAS JE VAIS PÉTER UNE DURITE !
+leave Renault
+# Bip sound
+[sound volume="0.0"]
+cocci: (Vroum ?)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+[voice volume="0.0"]
+[voice volume="0.0"]
+[end_timeline]

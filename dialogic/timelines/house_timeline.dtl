@@ -1,0 +1,21 @@
+join mother 1
+mother: Tu te lèves encore à cette heure-ci !?
+join cocci 1
+[wait time="1.0"]
+cocci: ...
+[voice volume="0.0"]
+mother: Il est 15h !
+[voice volume="0.0"]
+mother: C’est tous les jours pareils !
+mother: Tu te lèves à des heures pas possibles, tu sers à rien, tu fais pas le ménage et tu manges comme 4 !
+mother: T’as 28 ans Cocci !
+mother: Il serait temps de songer à travailler et gagner ton propre salaire ! A cause de toi je dois me serrer la ceinture.
+mother: Et va t’acheter des vêtements tu laisses des traces de pneus partout ! 
+[wait time="1.0"]
+mother: Sors d’ici !
+leave cocci
+[background fade="0.0"]
+[sound volume="0.0"]
+mother: Et ferme la porte derrière toi !
+leave mother
+[end_timeline]

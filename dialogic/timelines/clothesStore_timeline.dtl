@@ -1,4 +1,4 @@
-join shopkeeper_1 3 [animation="Slide In Left"]
+join cocci 3 [animation="Slide In Left"]
 shopkeeper_1: Bonjour, comment puis-je vous aider ?
 join cocci 1 [animation="Slide In Left"]
 cocci: Vrrr, vrr !

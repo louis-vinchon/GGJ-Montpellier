@@ -24,12 +24,16 @@ FlagManager="*res://3C-Felix/interactive/FlagManager.gd"
 [dialogic]
 
 directories/dch_directory={
+"Renault": "res://dialogic/characters/Renault.dch",
 "cocci": "res://dialogic/characters/cocci.dch",
+"hairstylist": "res://dialogic/characters/hairstylist.dch",
+"mother": "res://dialogic/characters/mother.dch",
 "shopkeeper_1": "res://dialogic/characters/shopkeeper_1.dch"
 }
 directories/dtl_directory={
 "TestTimeline": "res://3C-Felix/TestDialogues/TestTimeline.dtl",
 "bar": "res://dialogic/timelines/bar_timeline.dtl",
+"bedroom_timeline": "res://dialogic/timelines/bedroom_timeline.dtl",
 "carwash_timeline": "res://dialogic/timelines/carwash_timeline.dtl",
 "hairsalon_timeline": "res://dialogic/timelines/hairsalon_timeline.dtl",
 "house_timeline": "res://dialogic/timelines/house_timeline.dtl",
