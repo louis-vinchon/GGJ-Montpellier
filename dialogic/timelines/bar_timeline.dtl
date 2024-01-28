@@ -1,0 +1,102 @@
+join cocci 1
+join Renault 1
+[voice volume="0.0"]
+Renault: SALUT COCCI !
+Renault:  T’AS RÉUSSI À TROUVER LE BAR SANS GPS ? 
+cocci: (Vroum ?)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+Renault: ELLE ? C’EST MA SOEUR, MÉGANE !\
+
+Renault:  MAIS MAINTENANT QUE TU ES LA, JE DOIS TE PARLER  D’UN SUJET EXTRÊMEMENT SENSIBLE…
+[wait time="0.1" hide_text="false"]
+Renault: LA META GEOGUESSR !
+Renault: Vous pouvez jouer à GeoGuessr de plusieurs façons. Tout d'abord, en cliquant sur "Joueur unique" puis sur "Cartes classiques", vous obtiendrez une série de thèmes de cartes. La carte la plus jouée est la carte du monde, ce qui peut surprendre certains Américains. Les autres cartes les plus populaires sont les suivantes \: Lieux célèbres, États-Unis (je retire ma remarque précédente), Union européenne et Stades européens. Si vous recherchez votre ville/état/pays, il y aura probablement une carte pour votre emplacement - note \: cela peut ne pas être vrai pour les astronautes à bord de la Station spatiale internationale.\
+\
+La version standard de GeoGuessr permet aux joueurs de naviguer le long des routes pendant une durée infinie. En théorie, on peut vous fournir un lieu en Russie orientale et passer 3 semaines amusantes sur votre ordinateur à cliquer le long des routes sibériennes jusqu'à ce que vous atteigniez un Paris reconnaissable et ainsi retracer votre chemin pendant une autre période amusante de 3 semaines, ce qui vous rapportera 5 000 points, mais d'un autre côté, vous perdrez 6 semaines de votre vie. C'est une décision difficile à prendre. Il m'arrive de jouer à cette version du jeu, mais mon impatience me fait préférer la version chronométrée de GeoGuessr. Vous avez la possibilité de fixer une limite de temps par tour comprise entre 10 secondes et 10 minutes. Cela permet de s'assurer que les tours ne dépassent pas l'âge de l'univers observable.
+[voice volume="0.0"]
+Megane: Désolé pour mon frère, il est un peu bizarre mais...
+Megane: ... gentil... ?
+Megane: Il te fais ça souvent aussi ?
+Megane: Je comprend pas son délire. Il a dû choisir entre devenir ingénieur et devenir un joueur pro Geoguessr.
+Megane: Bon, il a fait son choix… et il ne gagne pas beaucoup d’argent quoi.
+[voice volume="0.0"]
+Renault: Une autre variante de GeoGuessr est le mode Explorateur. Une fois dans le mode Explorateur (qui se trouve dans la section "Joueur unique"), cliquez sur un pays pour jouer cette carte spécifique. Pour obtenir une médaille de bronze, vous devez obtenir plus de 5 000 points, pour l'argent, il faut plus de 15 000 points et pour l'insaisissable or, il faut un score de 22 500 points ou plus. Les points requis pour les médailles sont-ils des nombres apparemment arbitraires ? Oui. Est-il amusant de jouer au mode Explorateur, à l'exception de la carte mongole sans relief ? Absolument. Une fois que vous avez terminé un pays, en obtenant un score supérieur aux seuils susmentionnés, le pays prend la couleur appropriée sur la carte. Certains pays du mode Exploration (comme la Mongolie) sont pratiquement impossibles à gagner en or, à moins de jouer tous les lieux et de les mémoriser (ou de prendre des notes et d'attendre qu'ils se répètent).
+Megane: Et toi qu’est-ce que tu fais dans la vie ?
+(Vroum ?)
+- A
+	[sound volume="0.0"]
+	[voice volume="0.0"]
+	Megane: Oh ? C’est donc toi qui possède Amazon Meta Microsoft Apple Alphabet et … SudPiccel ?\
+
+	Megane: Incroyable tu dois être très… entreprenant.
+- B
+	[sound volume="0.0"]
+	Megane: Ah, intéressant, donc avec le nom de ton entreprise j’imagine que tu vends seulement des ventilateurs. C’est cool.
+[voice volume="0.0"]
+cocci: (Vroum !)
+- A
+	[sound volume="0.0"]
+	Megane: Dis moi c’est que tu es un beau parleur 🫠 T’as pas attendu pour passer la deuxième.\
+
+- B
+	[sound volume="0.0"]
+	Megane: Comment ça tu veux te vidanger ? Quel grossier personnage !
+Renault: Dans Battle Royale Countries, vous pouvez jouer contre un assortiment hétéroclite de GeoGuessr-philes du monde entier. Contrairement à son nom, Battle Royale Countries n'est pas un combat à mort féroce entre le prince Harry et le prince William dans lequel le dernier prince debout hérite du trône (même si je paierais de l'argent pour voir ça). Le mode GeoGuessr Battle Royale Countries consiste à utiliser vos connaissances géographiques pour identifier le pays dans lequel vous êtes placé. Le dernier joueur debout est le vainqueur.\
+\
+Il existe quelques tactiques pour augmenter vos chances de gagner. Tout d'abord, sachez que tous les pays ne sont pas inclus dans GeoGuessr. Vous trouverez une carte un peu plus loin dans cet article, dans la section "Techniques fondamentales", qui représente les pays inclus dans GeoGuessr. À l'exception de Taïwan, cette carte reflète largement les pays inclus dans le mode Battle Royale.\
+\
+Il existe des tactiques de jeu que vous devriez utiliser dans le mode Battle Royale. S'il reste un grand nombre de joueurs et que vous n'êtes pas sûr de votre position, attendez que les autres aient deviné. Les drapeaux des pays incorrectement devinés seront affichés dans le coin supérieur droit. Vous pouvez exclure ces pays et ainsi augmenter vos chances de victoire. Gardez toujours un œil sur ces drapeaux \: vous ne voulez pas deviner un pays qui a déjà été exclu. Au premier tour, il n'y a pas d'urgence à deviner, car tous les joueurs passeront s'ils devinent correctement avant la fin du chronomètre, qui est source de stress.
+cocci: ...
+Megane: ...
+cocci: (Vroum !?)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+[voice volume="0.0"]
+Megane: Wow, c’était surprenant. intrigant, élégant, ingénieux, intelligent, ambitieux...
+[voice volume="0.0"]
+cocci: (Vroum...)
+- A
+	[sound volume="0.0"]
+	Megane: Tu sais dans la vie je me dis toujours \: pas besoin de se presser, il n’y a pas le feu arrière.
+- B
+	[sound volume="0.0"]
+	Megane: Oh tu fais vraiment ça dans ton temps libre ? T’as pas peur que la police te coffre ?
+Renault: De manière stéréotypée, les personnes qui parlent ainsi sont des passionnés de voitures. Ce type de personnes est utile à GeoGuessr, mais pas nécessairement dans d'autres aspects de la vie. De la même manière que je suis ignorant des arbres, j'ai un angle mort similaire pour les voitures, alors pardonnez toutes les inexactitudes que j'écris. Dans le jeu GeoGuessr, il y a un assortiment de choses floutées ; parfois, cela va jusqu'aux logos des voitures. Ma naïveté automobile est telle que j'ai du mal à identifier des marques de voitures spécifiques sans les logos.\
+\
+Aux États-Unis, j'ai remarqué un grand nombre de "utes" coûteux, également connus sous le nom de camions personnels. À l'exception des grandes villes, une grande partie des voitures que je vois en circulant dans la rue sont ces "utes coûteux". Ces "utes coûteux" sont souvent des Ford F150, qui est d'ailleurs la voiture la plus vendue dans la plupart des régions des États-Unis, à l'exception des États côtiers. Les Canadiens aiment la Ford F-Series. Au Brésil, le Chevrolet Onix est le véhicule le plus populaire, tandis qu'en Argentine, c'est le Toyota Hilux. L'Australie et l'Afrique du Sud ont également une abondance de Toyota Hilux. Le Japon aime les voitures Toyota Aqua et les Coréens les voitures Hyundai (ainsi que la nourriture coréenne).
+cocci: ...
+Megane: ...
+cocci: (Vroum ?)
+- A
+- B
+Megane: Oui j’ai eu mon permis à mes 18 ans j’ai fait la conduite accompagnée avec mes parents.
+Megane: C’était dur mais au moins je peux prendre une voiture quand ça me chante.
+Megane: Et toi ?
+cocci: (Vroum...)
+- A
+	[sound volume="0.0"]
+- B
+	[sound volume="0.0"]
+Renault: L'Irlande est un pays unique dans GeoGuessr pour plusieurs raisons. Tout d'abord, elle se distingue en Europe par le fait qu'elle est l'un des trois seuls pays à rouler à gauche, les deux autres étant le Royaume-Uni et Malte. Le moyen le plus simple de distinguer l'Irlande du Royaume-Uni est de regarder les plaques d'immatriculation. L'Irlande a des plaques blanches à l'avant et à l'arrière, tandis que le Royaume-Uni a des plaques jaunes à l'arrière. Les routes irlandaises sont également bordées de lignes jaunes en pointillés, ce qui est rare au Royaume-Uni. L'Irlande est rare en Europe car l'anglais est couramment utilisé dans les magasins, les bâtiments, etc. Cependant, l'anglais et le gaélique apparaissent normalement sur les panneaux de signalisation irlandais. L'Irlande se distingue également du Royaume-Uni par le fait que les Irlandais utilisent le système métrique, de sorte que les distances jusqu'aux villes les plus proches et les limitations de vitesse sont indiquées en kilomètres et non en miles. Les panneaux d'avertissement et les panneaux destinés aux piétons sont également différents de ceux du reste de l'Europe. Les panneaux irlandais sont en forme de losange et de couleur jaune. Le paysage irlandais est très vert et luxuriant, et les rues sont souvent bordées de haies ou de petits murs rocheux. Les routes irlandaises sont souvent étroites et venteuses.
+cocci: ...
+Megane: ...
+Megane: Bref, tu l’as pas encore ?
+Megane: C’est bien tu dois être écolo alors j’aime beaucoup ! Tu fais attention à ton bilan carbone.
+Megane: Je pourrais te lift quelque part si jamais t’en as envie.
+Renault: Le Royaume-Uni se distingue dans GeoGuessr pour un certain nombre de raisons. Le moyen le plus simple de reconnaître immédiatement le Royaume-Uni est de voir les plaques d'immatriculation arrière jaunes associées aux plaques d'immatriculation avant blanches. La France avait déjà cette combinaison de plaques, mais maintenant, sur Street View, la plupart des Français ont des plaques blanches. En Corse, certaines plaques sont jaunes à l'arrière et blanches à l'avant, mais le paysage de la Corse est très différent de celui du Royaume-Uni. Le Royaume-Uni se distingue également en Europe par sa conduite à gauche. Les seuls autres pays européens concernés par GeoGuessr à conduire à gauche sont l'Irlande et Malte. Le Royaume-Uni est également l'un des deux seuls pays au monde à utiliser les miles, les yards et les pounds, l'autre étant les États-Unis.\
+\
+Il est relativement facile de naviguer au Royaume-Uni lorsque l'on se dirige vers des ronds-points. Des panneaux indiquant la grande ville la plus proche sont souvent présents à ces ronds-points et, grâce à la petite taille du Royaume-Uni, il ne faut généralement pas longtemps pour parcourir la carte et trouver la ville appropriée. Comme en Irlande, les routes britanniques sont en grande partie bordées de haies et de petits murs rocheux. Au Royaume-Uni, les antennes paraboliques sont orientées vers le sud-est. Les maisons de ville sont particulièrement répandues au Royaume-Uni et ont tendance à avoir deux étages et à être accolées l'une à l'autre. En d'autres termes, si vous voyez une maison de ville dans une rue du Royaume-Uni, il est probable que la même variante de maison de ville s'étende sur toute la rue. Le système routier britannique est expliqué en détail dans la section "Système de numérotation des autoroutes" plus haut dans cette scène.\
+\
+
+cocci: ...
+Megane: ...
+Megane: Je pense qu'on peut laisser Renault ici...
+Megane: De toute façon il peut retrouver là où il habite je lui ai donné une photo de sa porte d’entrée.
+[voice volume="0.0"]
+join Megane 1
+[end_timeline]
