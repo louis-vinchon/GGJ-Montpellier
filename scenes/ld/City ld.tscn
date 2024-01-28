@@ -1,10 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://jurm871riq6i"]
+[gd_scene load_steps=32 format=3 uid="uid://jurm871riq6i"]
 
 [ext_resource type="PackedScene" uid="uid://dedqgnpy4am3m" path="res://scenes/buildings/big_house.tscn" id="1_0c0m4"]
 [ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="1_7d7d3"]
 [ext_resource type="PackedScene" uid="uid://clgo0mgqbch0h" path="res://scenes/Road/road_line_4.tscn" id="1_bb6ft"]
 [ext_resource type="PackedScene" uid="uid://hruxe3uf5v5m" path="res://scenes/Road/l_turn_return.tscn" id="1_kemid"]
-[ext_resource type="PackedScene" uid="uid://c1x6uip34tf3b" path="res://scenes/tree.tscn" id="1_wp63w"]
+[ext_resource type="PackedScene" uid="uid://b8efp0278qq7n" path="res://scenes/tree.tscn" id="1_wp63w"]
 [ext_resource type="PackedScene" uid="uid://2l14v1j1uld8" path="res://scenes/Road/crossroad_t.tscn" id="2_noxp8"]
 [ext_resource type="PackedScene" uid="uid://d0ms6fwmvodd5" path="res://scenes/buildings/medium_house.tscn" id="2_srui3"]
 [ext_resource type="PackedScene" uid="uid://dlxbi4sic40lc" path="res://scenes/Road/road_line_4_2.tscn" id="3_grqhi"]
@@ -17,8 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://0733tv1x3np4" path="res://scenes/Road/end_road_2.tscn" id="9_2l5am"]
 [ext_resource type="PackedScene" uid="uid://7yxom3mmxxu0" path="res://scenes/buildings/medium_house_4.tscn" id="9_bq8cl"]
 [ext_resource type="PackedScene" uid="uid://dl06g1ejo8gvo" path="res://scenes/buildings/small_house_4.tscn" id="10_vgxy0"]
+[ext_resource type="PackedScene" uid="uid://dwf2k6sp5mrbq" path="res://bar.tscn" id="11_01rue"]
 [ext_resource type="PackedScene" uid="uid://jrlei7n0qm0c" path="res://scenes/buildings/small_house_2.tscn" id="11_30kcb"]
 [ext_resource type="PackedScene" uid="uid://deu6y4wph3o53" path="res://scenes/Road/l_turn.tscn" id="15_028ok"]
+[ext_resource type="PackedScene" uid="uid://c13j7dmv6hh36" path="res://haircut_building.tscn" id="18_6d6u4"]
 [ext_resource type="PackedScene" uid="uid://bhta4t8cabc67" path="res://scenes/buildings/medium_house_3.tscn" id="18_li8dq"]
 [ext_resource type="PackedScene" uid="uid://dgc84ds7trkcc" path="res://scenes/buildings/small_house_3.tscn" id="19_eayc3"]
 [ext_resource type="PackedScene" uid="uid://xpf07nlrly2u" path="res://scenes/buildings/big_house_3.tscn" id="20_b8ww7"]
@@ -376,6 +378,10 @@ position = Vector2(545, 388)
 
 [node name="Buildings2" type="Node2D" parent="ligne_2"]
 
+[node name="Bar" parent="ligne_2/Buildings2" instance=ExtResource("11_01rue")]
+position = Vector2(7261, 572)
+scale = Vector2(0.4, 0.4)
+
 [node name="Big_house_5" parent="ligne_2/Buildings2" instance=ExtResource("21_hmren")]
 position = Vector2(4059, 1027)
 scale = Vector2(0.4, 0.4)
@@ -506,6 +512,10 @@ scale = Vector2(0.4, 0.4)
 
 [node name="big_house_4" parent="ligne_4/Buildings2" instance=ExtResource("20_b8ww7")]
 position = Vector2(8464, 2000)
+scale = Vector2(0.4, 0.4)
+
+[node name="haircut_building" parent="ligne_4/Buildings2" instance=ExtResource("18_6d6u4")]
+position = Vector2(4506, 1664)
 scale = Vector2(0.4, 0.4)
 
 [node name="Roads" type="Node2D" parent="ligne_4"]
