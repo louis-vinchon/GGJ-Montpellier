@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://xpf07nlrly2u" path="res://scenes/buildings/big_house_3.tscn" id="20_b8ww7"]
 [ext_resource type="PackedScene" uid="uid://dhcwohuadljch" path="res://scenes/buildings/big_house_4.tscn" id="21_hmren"]
 [ext_resource type="AudioStream" uid="uid://bme5k1fi0bteg" path="res://assets/audio/LP_AMB_City_1_V1.wav" id="24_4moec"]
-[ext_resource type="AudioStream" uid="uid://bqo8px7356xux" path="res://assets/audio/Mixdown_GGJ_CityTheme_V1.mp3" id="25_1fn72"]
+[ext_resource type="AudioStream" uid="uid://bpc0k1j2vfuu4" path="res://assets/audio/Music/Mixdown_GGJ_CityTheme_V2.wav" id="25_pia2y"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
 
@@ -743,7 +743,7 @@ volume_db = -15.0
 autoplay = true
 
 [node name="BGM_City" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("25_1fn72")
+stream = ExtResource("25_pia2y")
 volume_db = -5.0
 autoplay = true
 max_distance = 2e+07
