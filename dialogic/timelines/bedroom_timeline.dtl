@@ -1,19 +1,20 @@
-[voice volume="0.0"]
 [sound volume="0.0"]
+[sound path="res://assets/audio/Vox_Narrator/son1.wav" volume="0.0"]
 join cocci 1
+[wait time="8.0"]
 cocci: (Vroum ?)
 - A
 	[sound volume="0.0"]
 - B
 	[sound volume="0.0"]
 join Renault 1
-Renault: OUI ALLO ?\
-Renault: COCCI T’ES CHAUD D’ALLER AU BAR POUR BOIRE UN COUP ?
+Renault: OUI ALLO ?
 Renault: ILS ORGANISENT UN RALLY ICI !
 Renault: EN TOUT CAS MOI JE SUIS CHAUD !
-[sound volume="0.0"]
-[sound volume="0.0"]
-VIENS CA VA ETRE COOL JE T’ATTEND D’ICI UNE HEURE HEIN CA ROULE POUR TOI ?
+Renault: COCCI T’ES CHAUD D’ALLER AU BAR POUR BOIRE UN COUP ?
+Renault: VIENS CA VA ETRE COOL JE T’ATTEND D’ICI UNE HEURE HEIN CA ROULE POUR TOI ?
+[sound path="res://assets/audio/Vox_Narrator/son2.wav" volume="0.0"]
+[wait time="3.0"]
 cocci: (Vroum ?)
 - A
 	[sound volume="0.0"]
@@ -29,6 +30,7 @@ cocci: (Vroum ?)
 	[sound volume="0.0"]
 - B
 	[sound volume="0.0"]
-[voice volume="0.0"]
-[voice volume="0.0"]
+[wait time="1.0"]
+[sound path="res://assets/audio/Vox_Narrator/son3.wav" volume="0.0"]
+[wait time="3.0"]
 [end_timeline]
