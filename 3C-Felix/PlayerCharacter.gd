@@ -5,6 +5,10 @@ extends RigidBody2D
 
 @onready var audiostreamplayer :AudioStreamPlayer = $AudioStreamPlayer
 
+@onready var sideView : Texture = load("res://assets/graph/car/car_side.png")
+@onready var frontView : Texture = load("res://assets/voiture_face.PNG")
+@onready var backView : Texture = load("res://assets/voiture_dos.PNG")
+
 var acceleration : Vector2 = Vector2(0,0)
 var RotationIncreased : float = 0
 
@@ -44,16 +48,33 @@ func _process(delta):
 	acceleration = transform.x * forwardInput * accelerationPower * delta
 	
 	
-	if (rotation_degrees < 90 && rotation_degrees > -90):
+	if (rotation_degrees < 60 && rotation_degrees > -60):
 		
-		$Sprite2D.flip_v = false
+		$Sprite2D.flip_h = false
 		
-		pass
+		$Sprite2D.texture = sideView
+		
+		
+		
+	elif (rotation_degrees < -60 && rotation_degrees > -120):
+		
+		$Sprite2D.texture = backView
+		
+		
+		
+	elif (rotation_degrees < 120 && rotation_degrees > 60):
+		
+		$Sprite2D.texture = frontView
+		
 	else :
 		
-		$Sprite2D.flip_v = true
+		$Sprite2D.flip_h = true
+		
+		$Sprite2D.texture = sideView
 		
 		pass
+	
+	$Sprite2D.global_rotation = 0
 	
 	play_sounds()
 

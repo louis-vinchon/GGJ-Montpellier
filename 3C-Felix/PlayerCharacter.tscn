@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dj6br5xyalht"]
+[gd_scene load_steps=7 format=3 uid="uid://dj6br5xyalht"]
 
 [ext_resource type="Script" path="res://3C-Felix/PlayerCharacter.gd" id="1_dtsqw"]
 [ext_resource type="Texture2D" uid="uid://n6xnpkm3na8r" path="res://assets/graph/car/car_side.png" id="2_fw3s3"]
+[ext_resource type="Texture2D" uid="uid://d33hdhn820836" path="res://assets/TEX_indicator.png" id="2_iwt2u"]
 [ext_resource type="Script" path="res://3C-Felix/InteractionRay.gd" id="3_4hgy7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_csubi"]
@@ -19,6 +20,11 @@ linear_damp = 1.0
 script = ExtResource("1_dtsqw")
 accelerationPower = 50000.0
 
+[node name="Indicator" type="Sprite2D" parent="."]
+z_index = 10
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_iwt2u")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.03125, 0.03125)
 texture = ExtResource("2_fw3s3")
@@ -27,6 +33,7 @@ texture = ExtResource("2_fw3s3")
 shape = SubResource("CircleShape2D_hjxpa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(15, 0)
