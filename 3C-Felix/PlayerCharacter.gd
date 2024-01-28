@@ -81,11 +81,14 @@ func _process(delta):
 func play_sounds():
 	if linear_velocity.length() > 0:
 		# Play sound.
-		#audiostreamplayer.play()
-		#audiostreamplayer.stream = load("path to other mp3")
+		audiostreamplayer.loop = true
+		audiostreamplayer.play()
+		audiostreamplayer.fade_in(0.5)
+		audiostreamplayer.stream = load("res://assets/audio/LP_PLAYER_Motor_1_V1.wav")
 		pass
 	else:
-		# audiostreamplayer.stop()
+		audiostreamplayer.fade_out(0.5)
+		audiostreamplayer.stop()
 		pass
 
 
