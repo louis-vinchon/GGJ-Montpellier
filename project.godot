@@ -24,6 +24,7 @@ FlagManager="*res://3C-Felix/interactive/FlagManager.gd"
 [dialogic]
 
 directories/dch_directory={
+"Megane": "res://dialogic/characters/Megane.dch",
 "Renault": "res://dialogic/characters/Renault.dch",
 "cocci": "res://dialogic/characters/cocci.dch",
 "hairstylist": "res://dialogic/characters/hairstylist.dch",
