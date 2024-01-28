@@ -67,7 +67,7 @@ shape = SubResource("RectangleShape2D_n4b2c")
 
 [node name="Npc" parent="." instance=ExtResource("3_csqra")]
 position = Vector2(559, 37)
-selectedDialogue = "TestTimeline"
+selectedDialogue = "bedroom_timeline"
 
 [node name="Door" parent="." instance=ExtResource("4_17q5t")]
 position = Vector2(210, 6)
