@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://o4okf6ld2cti" path="res://assets/graph/Sol/tapis.png" id="1_qtv47"]
 [ext_resource type="Texture2D" uid="uid://c1d6f6fov7cv0" path="res://assets/graph/Sol/wood.png" id="2_gxtj3"]
-[ext_resource type="PackedScene" uid="uid://dhykggm5vein1" path="res://sink.tscn" id="3_kph5w"]
-[ext_resource type="PackedScene" uid="uid://by3ma63ygkmrn" path="res://bed.tscn" id="4_e5ab8"]
+[ext_resource type="PackedScene" path="res://sink.tscn" id="3_kph5w"]
+[ext_resource type="PackedScene" path="res://bed.tscn" id="4_e5ab8"]
 [ext_resource type="Texture2D" uid="uid://cso3stnkoycm7" path="res://assets/graph/Sol/tire_tracks_dark.png" id="5_57bmc"]
 [ext_resource type="Texture2D" uid="uid://lshayjxocqw1" path="res://assets/graph/Sol/tire_tracks_light.png" id="6_pe4dm"]
-[ext_resource type="PackedScene" uid="uid://cqanwfpd3aev2" path="res://table.tscn" id="7_7g1ok"]
+[ext_resource type="PackedScene" path="res://table.tscn" id="7_7g1ok"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_28dx6"]
 texture = ExtResource("1_qtv47")
