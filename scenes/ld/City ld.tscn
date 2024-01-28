@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://jurm871riq6i"]
+[gd_scene load_steps=27 format=3 uid="uid://jurm871riq6i"]
 
 [ext_resource type="PackedScene" uid="uid://dedqgnpy4am3m" path="res://scenes/buildings/big_house.tscn" id="1_0c0m4"]
 [ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="1_7d7d3"]
@@ -22,8 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://dgc84ds7trkcc" path="res://scenes/buildings/small_house_3.tscn" id="19_eayc3"]
 [ext_resource type="PackedScene" uid="uid://xpf07nlrly2u" path="res://scenes/buildings/big_house_3.tscn" id="20_b8ww7"]
 [ext_resource type="PackedScene" uid="uid://dhcwohuadljch" path="res://scenes/buildings/big_house_4.tscn" id="21_hmren"]
-[ext_resource type="AudioStream" uid="uid://b2lpd3tchxgck" path="res://assets/audio/Music/Mixdown_GGJ_CityTheme_V2.wav" id="23_aydbr"]
-[ext_resource type="AudioStream" uid="uid://bme5k1fi0bteg" path="res://assets/audio/LP_AMB_City_1_V1.wav" id="23_mkutw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
 
@@ -702,13 +700,3 @@ scale = Vector2(0.4, 0.4)
 
 [node name="Buildings" type="Node2D" parent="."]
 scale = Vector2(0.4, 0.4)
-
-[node name="AMB" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("23_mkutw")
-volume_db = -10.811
-autoplay = true
-
-[node name="BGM" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("23_aydbr")
-volume_db = -4.063
-autoplay = true
