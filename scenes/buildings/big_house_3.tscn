@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=3 uid="uid://xpf07nlrly2u"]
+
+[ext_resource type="Texture2D" uid="uid://betxfuy7sb787" path="res://assets/graph/ville/batiments/house_left_side_ground_floor.png" id="1_x14jq"]
+[ext_resource type="Texture2D" uid="uid://d3ihpob6ff33s" path="res://assets/graph/ville/batiments/house_big_window.png" id="2_nsdxe"]
+[ext_resource type="Texture2D" uid="uid://dfwbateyjhugv" path="res://assets/graph/ville/batiments/house_left_side_first_floor.png" id="3_j0jty"]
+[ext_resource type="Texture2D" uid="uid://c2e3eop83dar2" path="res://assets/graph/ville/batiments/house_small_window.png" id="4_7msk3"]
+[ext_resource type="Texture2D" uid="uid://4cej7gjyhv10" path="res://assets/graph/ville/batiments/house_small_window_sided.png" id="5_d23gg"]
+[ext_resource type="Texture2D" uid="uid://brx0b5y04sxt4" path="res://assets/graph/ville/batiments/house_orange_roof.png" id="6_mgqj2"]
+[ext_resource type="Texture2D" uid="uid://kbbepedysfnb" path="res://assets/graph/ville/batiments/brick_light.png" id="7_sdrsd"]
+[ext_resource type="Texture2D" uid="uid://ysbkpbw3c6f0" path="res://assets/graph/ville/batiments/brick_dark.png" id="8_i8gm3"]
+[ext_resource type="Texture2D" uid="uid://sulahxfs6fgp" path="res://assets/graph/ville/batiments/brick_orange.png" id="9_rhlqu"]
+[ext_resource type="Texture2D" uid="uid://dn2ao5ovppl0o" path="res://assets/graph/ville/batiments/house_metal_door_sided.png" id="10_i3soc"]
+[ext_resource type="Texture2D" uid="uid://bbno4ie1ke51d" path="res://assets/graph/ville/batiments/brick_dark_sided.png" id="11_wt3i0"]
+[ext_resource type="Texture2D" uid="uid://b2vw51ybavnn8" path="res://assets/graph/ville/batiments/brick_orange_sided.png" id="12_8tpd7"]
+[ext_resource type="Texture2D" uid="uid://bwn2ng2bedr2s" path="res://assets/graph/ville/batiments/brick_light_sided.png" id="13_n6im8"]
+
+[node name="big_house_3" type="Node2D"]
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2(-302, -594)
+
+[node name="Wall" type="Sprite2D" parent="Ground"]
+position = Vector2(371, 470)
+texture = ExtResource("1_x14jq")
+
+[node name="BigWindow" type="Sprite2D" parent="Ground"]
+position = Vector2(792, 430)
+texture = ExtResource("2_nsdxe")
+flip_h = true
+
+[node name="FirstFloor" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(70, -626)
+texture = ExtResource("3_j0jty")
+
+[node name="BigWindow" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-192, -665)
+texture = ExtResource("2_nsdxe")
+
+[node name="SecondFloor" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(70, -1135)
+texture = ExtResource("3_j0jty")
+
+[node name="HouseSmallWindow" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(-264, -1219)
+texture = ExtResource("4_7msk3")
+
+[node name="Window" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(555, -1218)
+texture = ExtResource("4_7msk3")
+
+[node name="HouseSmallWindowSided" type="Sprite2D" parent="SecondFloor"]
+position = Vector2(-655, -994)
+texture = ExtResource("5_d23gg")
+
+[node name="Roof" type="Node2D" parent="."]
+position = Vector2(-296, -1024)
+
+[node name="HouseOrangeRoof" type="Sprite2D" parent="Roof"]
+position = Vector2(366, -623)
+texture = ExtResource("6_mgqj2")
+
+[node name="BrickLight" type="Sprite2D" parent="."]
+position = Vector2(-361, -225)
+texture = ExtResource("7_sdrsd")
+
+[node name="BrickDark" type="Sprite2D" parent="."]
+position = Vector2(433, -718)
+texture = ExtResource("8_i8gm3")
+
+[node name="BrickOrange" type="Sprite2D" parent="."]
+position = Vector2(497, -787)
+texture = ExtResource("9_rhlqu")
+
+[node name="BrickDark2" type="Sprite2D" parent="."]
+position = Vector2(578, -722)
+texture = ExtResource("8_i8gm3")
+
+[node name="BrickLight2" type="Sprite2D" parent="."]
+position = Vector2(-120, -48)
+texture = ExtResource("7_sdrsd")
+
+[node name="BrickOrange2" type="Sprite2D" parent="."]
+position = Vector2(-224, -139)
+texture = ExtResource("9_rhlqu")
+
+[node name="HouseMetalDoorSided" type="Sprite2D" parent="."]
+position = Vector2(-655, -212)
+texture = ExtResource("10_i3soc")
+
+[node name="BrickLight3" type="Sprite2D" parent="."]
+position = Vector2(55, -1261)
+texture = ExtResource("7_sdrsd")
+
+[node name="BrickOrange3" type="Sprite2D" parent="."]
+position = Vector2(119, -1186)
+texture = ExtResource("9_rhlqu")
+
+[node name="BrickDarkSided" type="Sprite2D" parent="."]
+position = Vector2(-679, -669)
+texture = ExtResource("11_wt3i0")
+
+[node name="BrickDarkSided2" type="Sprite2D" parent="."]
+position = Vector2(-615, -637)
+texture = ExtResource("11_wt3i0")
+
+[node name="BrickOrangeSided" type="Sprite2D" parent="."]
+position = Vector2(-636, -1468)
+texture = ExtResource("12_8tpd7")
+
+[node name="BrickLightSided" type="Sprite2D" parent="."]
+position = Vector2(-680, -1437)
+texture = ExtResource("13_n6im8")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://icfrbeaqvke"]
+
+[ext_resource type="Texture2D" uid="uid://yuowdhhaom2y" path="res://assets/graph/ville/Road/road.png" id="1_33v1t"]
+[ext_resource type="Texture2D" uid="uid://ct7fy264c4ko7" path="res://assets/graph/ville/Road/trait_route_1.png" id="2_ya1lw"]
+
+[node name="road_8" type="Node2D"]
+
+[node name="Road" type="Sprite2D" parent="."]
+position = Vector2(-106, 1)
+texture = ExtResource("1_33v1t")
+
+[node name="Road2" type="Sprite2D" parent="."]
+position = Vector2(-11, 1)
+texture = ExtResource("1_33v1t")
+
+[node name="Road3" type="Sprite2D" parent="."]
+position = Vector2(83, 1)
+texture = ExtResource("1_33v1t")
+
+[node name="TraitRoute1" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ya1lw")

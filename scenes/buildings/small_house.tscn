@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cje8u8y7v6y80"]
+[gd_scene load_steps=10 format=3 uid="uid://cje8u8y7v6y80"]
 
 [ext_resource type="Texture2D" uid="uid://betxfuy7sb787" path="res://assets/graph/ville/batiments/house_left_side_ground_floor.png" id="1_5114y"]
 [ext_resource type="Texture2D" uid="uid://dprumrysg5d8w" path="res://assets/graph/ville/batiments/house_wood_door.png" id="2_rxmiq"]
 [ext_resource type="Texture2D" uid="uid://c2e3eop83dar2" path="res://assets/graph/ville/batiments/house_small_window.png" id="3_tlutq"]
 [ext_resource type="Texture2D" uid="uid://brx0b5y04sxt4" path="res://assets/graph/ville/batiments/house_orange_roof.png" id="4_yt1sb"]
+[ext_resource type="Texture2D" uid="uid://7xswha38pafu" path="res://assets/graph/ville/batiments/street_number.png" id="5_lni2b"]
+[ext_resource type="Texture2D" uid="uid://ysbkpbw3c6f0" path="res://assets/graph/ville/batiments/brick_dark.png" id="6_xaa5t"]
+[ext_resource type="Texture2D" uid="uid://bwn2ng2bedr2s" path="res://assets/graph/ville/batiments/brick_light_sided.png" id="7_l4fji"]
+[ext_resource type="Texture2D" uid="uid://b2vw51ybavnn8" path="res://assets/graph/ville/batiments/brick_orange_sided.png" id="8_oh5up"]
+[ext_resource type="Texture2D" uid="uid://kbbepedysfnb" path="res://assets/graph/ville/batiments/brick_light.png" id="9_tfeaw"]
 
 [node name="SmallHouse" type="Node2D"]
 
@@ -28,3 +33,23 @@ position = Vector2(-216, -601)
 [node name="Roof" type="Sprite2D" parent="Roof"]
 position = Vector2(371, -23)
 texture = ExtResource("4_yt1sb")
+
+[node name="StreetNumber" type="Sprite2D" parent="."]
+position = Vector2(801, -185)
+texture = ExtResource("5_lni2b")
+
+[node name="BrickDark" type="Sprite2D" parent="."]
+position = Vector2(191, -103)
+texture = ExtResource("6_xaa5t")
+
+[node name="BrickLightSided" type="Sprite2D" parent="."]
+position = Vector2(-551, -357)
+texture = ExtResource("7_l4fji")
+
+[node name="BrickOrangeSided" type="Sprite2D" parent="."]
+position = Vector2(-567, -441)
+texture = ExtResource("8_oh5up")
+
+[node name="BrickLight" type="Sprite2D" parent="."]
+position = Vector2(247, -165)
+texture = ExtResource("9_tfeaw")

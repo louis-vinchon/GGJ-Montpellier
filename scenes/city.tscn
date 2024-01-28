@@ -1,18 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://cfgsbv25thdk7"]
 
-[ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="1_a38id"]
+[ext_resource type="Texture2D" uid="uid://yuowdhhaom2y" path="res://assets/graph/ville/Road/road.png" id="1_upji0"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_4fclt"]
 tile_data = PackedInt32Array(0, 2, 0, 1, 2, 0, 65537, 2, 0, 131073, 2, 0, 131074, 2, 0)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vwohi"]
-texture = ExtResource("1_a38id")
-texture_region_size = Vector2i(128, 128)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8usn"]
+texture = ExtResource("1_upji0")
+texture_region_size = Vector2i(302, 133)
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_dnwjt"]
-tile_size = Vector2i(128, 128)
-sources/2 = SubResource("TileSetAtlasSource_vwohi")
+tile_size = Vector2i(302, 133)
+sources/2 = SubResource("TileSetAtlasSource_r8usn")
 pattern_0 = SubResource("TileMapPattern_4fclt")
 
 [node name="City" type="Node2D"]
