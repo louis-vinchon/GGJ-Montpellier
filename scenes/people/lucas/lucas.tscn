@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c75o7a5huad5c"]
+
+[ext_resource type="Texture2D" uid="uid://cfo52m5hslbaq" path="res://assets/graph/people/body_dark_skin_2.png" id="1_0qchq"]
+[ext_resource type="Texture2D" uid="uid://b5nwmkkcjg0e5" path="res://assets/graph/people/man_head_dark_skin.png" id="2_sih1q"]
+[ext_resource type="PackedScene" uid="uid://de7b3twrsryhg" path="res://scenes/components/conversation/conversation.tscn" id="3_73bwl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2k6sx"]
+radius = 105.019
+
+[node name="Lucas" type="StaticBody2D"]
+
+[node name="Body" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-1, -3)
+texture = ExtResource("1_0qchq")
+offset = Vector2(0, -300)
+
+[node name="Head" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-2, 0)
+texture = ExtResource("2_sih1q")
+offset = Vector2(0, -700)
+
+[node name="Conversation" parent="." instance=ExtResource("3_73bwl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2k6sx")
