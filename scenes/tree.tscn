@@ -3,10 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bku3kvko26jw6" path="res://assets/graph/ville/decors/tree.png" id="1_hh0rm"]
 
 [node name="Tree" type="StaticBody2D"]
-y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-y_sort_enabled = true
 position = Vector2(0, 312)
 texture = ExtResource("1_hh0rm")
 offset = Vector2(0, -330)

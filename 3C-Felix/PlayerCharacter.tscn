@@ -25,6 +25,7 @@ accelerationPower = 50000.0
 position = Vector2(-70, 2)
 
 [node name="Indicator" type="Sprite2D" parent="."]
+z_index = 2
 texture = ExtResource("2_iwt2u")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

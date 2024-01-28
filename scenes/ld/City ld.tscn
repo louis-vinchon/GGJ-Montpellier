@@ -34,7 +34,7 @@
 
 [sub_resource type="SphereMesh" id="SphereMesh_5w6fv"]
 
-[node name="Node2D" type="Node2D"]
+[node name="CityLD" type="Node2D"]
 
 [node name="map template" type="Node2D" parent="."]
 visible = false
@@ -297,15 +297,16 @@ mesh = SubResource("BoxMesh_m86x4")
 [node name="ligne_1" type="Node2D" parent="."]
 
 [node name="Buildings" type="Node2D" parent="ligne_1"]
+z_index = 1
 
 [node name="Tree5" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
-position = Vector2(2126, -356)
+position = Vector2(2071, -459)
 
 [node name="Tree6" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
 position = Vector2(4799, -456)
 
 [node name="Tree7" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
-position = Vector2(-69, -264)
+position = Vector2(-281, -346)
 
 [node name="SmallHouse2" parent="ligne_1/Buildings" instance=ExtResource("1_7d7d3")]
 position = Vector2(1698, 70)
@@ -320,11 +321,11 @@ position = Vector2(2556, 72)
 scale = Vector2(0.4, 0.4)
 
 [node name="BigHouse12" parent="ligne_1/Buildings" instance=ExtResource("3_rh6sx")]
-position = Vector2(4784, 88)
+position = Vector2(4781, 75)
 scale = Vector2(0.4, 0.4)
 
 [node name="MediumHouse3" parent="ligne_1/Buildings" instance=ExtResource("2_srui3")]
-position = Vector2(6226, 72)
+position = Vector2(6226, 70)
 scale = Vector2(0.4, 0.4)
 
 [node name="BigHouse11" parent="ligne_1/Buildings" instance=ExtResource("6_nnfw3")]
@@ -332,15 +333,15 @@ position = Vector2(309, 69)
 scale = Vector2(0.4, 0.4)
 
 [node name="SmallHouse4" parent="ligne_1/Buildings" instance=ExtResource("1_7d7d3")]
-position = Vector2(5482, 77)
+position = Vector2(5478, 73)
 scale = Vector2(0.4, 0.4)
 
 [node name="BigHouse2" parent="ligne_1/Buildings" instance=ExtResource("1_0c0m4")]
-position = Vector2(3997, 103)
+position = Vector2(4008, 71)
 scale = Vector2(0.4, 0.4)
 
 [node name="Small_house_4" parent="ligne_1/Buildings" instance=ExtResource("11_30kcb")]
-position = Vector2(3368, 87)
+position = Vector2(3341, 68)
 scale = Vector2(0.4, 0.4)
 
 [node name="Roads" type="Node2D" parent="ligne_1"]
@@ -375,6 +376,7 @@ position = Vector2(545, 388)
 [node name="ligne_2" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_2"]
+z_index = 1
 
 [node name="Big_house_5" parent="ligne_2/Buildings2" instance=ExtResource("21_hmren")]
 position = Vector2(4059, 1027)
@@ -425,6 +427,7 @@ position = Vector2(2179, 1440)
 position = Vector2(7371, 1444)
 
 [node name="Buildings2" type="Node2D" parent="ligne_3"]
+z_index = 1
 
 [node name="medium_house_6" parent="ligne_3/Buildings2" instance=ExtResource("9_bq8cl")]
 position = Vector2(1075, 1016)
@@ -471,17 +474,18 @@ scale = Vector2(0.4, 0.4)
 [node name="ligne_4" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_4"]
+z_index = 1
 
 [node name="BigHouse15" parent="ligne_4/Buildings2" instance=ExtResource("3_rh6sx")]
-position = Vector2(1670, 1672)
+position = Vector2(1657, 1662)
 scale = Vector2(0.4, 0.4)
 
 [node name="Small_house_3" parent="ligne_4/Buildings2" instance=ExtResource("11_30kcb")]
-position = Vector2(922, 1669)
+position = Vector2(922, 1656)
 scale = Vector2(0.4, 0.4)
 
 [node name="SmallHouse4" parent="ligne_4/Buildings2" instance=ExtResource("1_7d7d3")]
-position = Vector2(353, 1679)
+position = Vector2(290, 1659)
 scale = Vector2(0.4, 0.4)
 
 [node name="Big_house_6" parent="ligne_4/Buildings2" instance=ExtResource("21_hmren")]
@@ -501,11 +505,11 @@ position = Vector2(6811, 1653)
 scale = Vector2(0.4, 0.4)
 
 [node name="small_house_6" parent="ligne_4/Buildings2" instance=ExtResource("19_eayc3")]
-position = Vector2(8101, 1620)
+position = Vector2(8130, 1624)
 scale = Vector2(0.4, 0.4)
 
 [node name="big_house_4" parent="ligne_4/Buildings2" instance=ExtResource("20_b8ww7")]
-position = Vector2(8464, 2000)
+position = Vector2(8485, 2000)
 scale = Vector2(0.4, 0.4)
 
 [node name="Roads" type="Node2D" parent="ligne_4"]
@@ -541,6 +545,7 @@ position = Vector2(697, 1979)
 [node name="ligne_5" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_5"]
+z_index = 1
 
 [node name="Big_house_6" parent="ligne_5/Buildings2" instance=ExtResource("21_hmren")]
 position = Vector2(7138, 2014)
@@ -570,9 +575,10 @@ position = Vector2(8767, 2376)
 scale = Vector2(0.4, 0.4)
 
 [node name="Tree6" parent="ligne_5/Buildings2" instance=ExtResource("1_wp63w")]
-position = Vector2(9052, 2382)
+position = Vector2(9134, 2361)
 
 [node name="Tree" parent="ligne_5" instance=ExtResource("1_wp63w")]
+z_index = 1
 position = Vector2(3611, 2013)
 
 [node name="Tree2" parent="ligne_5" instance=ExtResource("1_wp63w")]
@@ -589,6 +595,7 @@ position = Vector2(3090, 2502)
 [node name="ligne_6" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_6"]
+z_index = 1
 
 [node name="MediumHouse5" parent="ligne_6/Buildings2" instance=ExtResource("2_srui3")]
 position = Vector2(4613, 2729)
@@ -611,7 +618,7 @@ position = Vector2(6352, 2724)
 scale = Vector2(0.4, 0.4)
 
 [node name="Big_house_11" parent="ligne_6/Buildings2" instance=ExtResource("21_hmren")]
-position = Vector2(2591, 2743)
+position = Vector2(2448, 2604)
 scale = Vector2(0.4, 0.4)
 
 [node name="Roads" type="Node2D" parent="ligne_6"]
@@ -643,6 +650,7 @@ position = Vector2(3504, 2975)
 [node name="ligne_7" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_7"]
+z_index = 1
 
 [node name="medium_house_13" parent="ligne_7/Buildings2" instance=ExtResource("9_bq8cl")]
 position = Vector2(3005, 3264)
@@ -665,7 +673,7 @@ position = Vector2(5154, 3369)
 scale = Vector2(0.4, 0.4)
 
 [node name="Tree7" parent="ligne_7/Buildings2" instance=ExtResource("1_wp63w")]
-position = Vector2(9703, 3156)
+position = Vector2(9796, 3135)
 
 [node name="Roads" type="Node2D" parent="ligne_7"]
 
@@ -680,6 +688,7 @@ position = Vector2(9182, 3564)
 position = Vector2(9638, 4094)
 
 [node name="Buildings2" type="Node2D" parent="ligne_8"]
+z_index = 1
 
 [node name="small_house_6" parent="ligne_8/Buildings2" instance=ExtResource("10_vgxy0")]
 position = Vector2(8424, 3584)
@@ -698,11 +707,12 @@ position = Vector2(9926, 3693)
 scale = Vector2(0.4, 0.4)
 
 [node name="Big_house_8" parent="ligne_8/Buildings2" instance=ExtResource("21_hmren")]
-position = Vector2(9232, 4482)
+position = Vector2(9052, 4425)
 scale = Vector2(0.4, 0.4)
 
 [node name="Tree7" parent="." instance=ExtResource("1_wp63w")]
-position = Vector2(9482, 4315)
+z_index = 1
+position = Vector2(9239, 4342)
 
 [node name="ligne_9" type="Node2D" parent="."]
 
@@ -721,13 +731,14 @@ position = Vector2(10816, 4639)
 position = Vector2(10051, 4568)
 
 [node name="Buildings2" type="Node2D" parent="ligne_9"]
+z_index = 1
 
 [node name="small_house_7" parent="ligne_9/Buildings2" instance=ExtResource("10_vgxy0")]
 position = Vector2(10217, 4960)
 scale = Vector2(0.4, 0.4)
 
 [node name="Big_house_9" parent="ligne_9/Buildings2" instance=ExtResource("21_hmren")]
-position = Vector2(9571, 4867)
+position = Vector2(9541, 4918)
 scale = Vector2(0.4, 0.4)
 
 [node name="medium_house_10" parent="ligne_9/Buildings2" instance=ExtResource("9_bq8cl")]
@@ -746,5 +757,3 @@ autoplay = true
 stream = ExtResource("25_pia2y")
 volume_db = -5.0
 autoplay = true
-max_distance = 2e+07
-attenuation = 7.01101e-05
