@@ -43,6 +43,18 @@ func _process(delta):
 	
 	acceleration = transform.x * forwardInput * accelerationPower * delta
 	
+	
+	if (rotation_degrees < 90 && rotation_degrees > -90):
+		
+		$Sprite2D.flip_v = false
+		
+		pass
+	else :
+		
+		$Sprite2D.flip_v = true
+		
+		pass
+	
 	play_sounds()
 
 func play_sounds():

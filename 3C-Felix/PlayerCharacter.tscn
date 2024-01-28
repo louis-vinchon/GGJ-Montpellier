@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dj6br5xyalht"]
 
 [ext_resource type="Script" path="res://3C-Felix/PlayerCharacter.gd" id="1_dtsqw"]
-[ext_resource type="Texture2D" uid="uid://cnbqqqsk6xhno" path="res://icon.svg" id="1_mv1dl"]
+[ext_resource type="Texture2D" uid="uid://n6xnpkm3na8r" path="res://assets/graph/car/car_side.png" id="2_fw3s3"]
 [ext_resource type="Script" path="res://3C-Felix/InteractionRay.gd" id="3_4hgy7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_csubi"]
@@ -20,51 +20,8 @@ script = ExtResource("1_dtsqw")
 accelerationPower = 50000.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0, 0, 0, 1)
-rotation = 1.57079
-scale = Vector2(0.181959, 0.181959)
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
-modulate = Color(0, 0, 0, 1)
-rotation = 0.20546
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2"]
-modulate = Color(0, 0, 0, 1)
-rotation = 1.82977
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D"]
-modulate = Color(0, 0, 0, 1)
-rotation = 0.20546
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
-modulate = Color(0, 0, 0, 1)
-rotation = 1.79969
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
-modulate = Color(0, 0, 0, 1)
-rotation = 0.20546
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2"]
-modulate = Color(0, 0, 0, 1)
-rotation = 1.69739
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D/Sprite2D2/Sprite2D"]
-modulate = Color(0, 0, 0, 1)
-rotation = 0.20546
-texture = ExtResource("1_mv1dl")
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-modulate = Color(1, 0, 0, 1)
-position = Vector2(10, 0)
-scale = Vector2(0.2, 0.0570313)
-texture = ExtResource("1_mv1dl")
+scale = Vector2(0.03125, 0.03125)
+texture = ExtResource("2_fw3s3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hjxpa")
