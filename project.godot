@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="GGJ"
-run/main_scene="res://scenes/ld/City ld.tscn"
+config/name="Coccis highway of Life"
+run/main_scene="res://scenes/city.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
