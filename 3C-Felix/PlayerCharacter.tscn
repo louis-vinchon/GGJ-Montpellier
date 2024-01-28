@@ -11,7 +11,7 @@ friction = 10.0
 bounce = 0.1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hjxpa"]
-radius = 15.2971
+radius = 72.0069
 
 [node name="PlayerCharacter" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_csubi")
@@ -22,27 +22,24 @@ script = ExtResource("1_dtsqw")
 accelerationPower = 50000.0
 
 [node name="Node2D" parent="." instance=ExtResource("2_a13rm")]
-position = Vector2(-15, 2)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-70, 2)
 
 [node name="Indicator" type="Sprite2D" parent="."]
-z_index = 10
-scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_iwt2u")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.03125, 0.03125)
+scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_fw3s3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hjxpa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(0.5, 0.5)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(15, 0)
-target_position = Vector2(20, 0)
+position = Vector2(72, 0)
+target_position = Vector2(51, 0)
 script = ExtResource("3_4hgy7")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
