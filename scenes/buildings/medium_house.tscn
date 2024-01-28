@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bwn2ng2bedr2s" path="res://assets/graph/ville/batiments/brick_light_sided.png" id="11_3sba1"]
 [ext_resource type="Texture2D" uid="uid://kbbepedysfnb" path="res://assets/graph/ville/batiments/brick_light.png" id="12_tn2lx"]
 
-[node name="MediumHouse" type="Node2D"]
+[node name="MediumHouse" type="StaticBody2D"]
 
 [node name="Ground" type="Node2D" parent="."]
 position = Vector2(-216, -592)
@@ -78,3 +78,6 @@ texture = ExtResource("12_tn2lx")
 [node name="BrickOrange2" type="Sprite2D" parent="."]
 position = Vector2(772, -613)
 texture = ExtResource("8_vwdjo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)
