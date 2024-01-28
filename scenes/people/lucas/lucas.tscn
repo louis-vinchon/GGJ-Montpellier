@@ -2,12 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://cfo52m5hslbaq" path="res://assets/graph/people/body_dark_skin_2.png" id="1_0qchq"]
 [ext_resource type="Texture2D" uid="uid://b5nwmkkcjg0e5" path="res://assets/graph/people/man_head_dark_skin.png" id="2_sih1q"]
-[ext_resource type="PackedScene" uid="uid://de7b3twrsryhg" path="res://scenes/components/conversation/conversation.tscn" id="3_73bwl"]
+[ext_resource type="PackedScene" uid="uid://cmyyqdmi0y3or" path="res://3C-Felix/interactive/NPC.tscn" id="3_2uip2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2k6sx"]
 radius = 105.019
 
 [node name="Lucas" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+scale = Vector2(0.2, 0.2)
 
 [node name="Body" type="Sprite2D" parent="."]
 y_sort_enabled = true
@@ -21,7 +24,8 @@ position = Vector2(-2, 0)
 texture = ExtResource("2_sih1q")
 offset = Vector2(0, -700)
 
-[node name="Conversation" parent="." instance=ExtResource("3_73bwl")]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_2k6sx")
+
+[node name="Npc" parent="." instance=ExtResource("3_2uip2")]
+selectedDialogue = "bar"
