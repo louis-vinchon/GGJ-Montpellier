@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgc84ds7trkcc"]
+
+[ext_resource type="Texture2D" uid="uid://betxfuy7sb787" path="res://assets/graph/ville/batiments/house_left_side_ground_floor.png" id="1_yqjxb"]
+[ext_resource type="Texture2D" uid="uid://d3ihpob6ff33s" path="res://assets/graph/ville/batiments/house_big_window.png" id="2_ycaej"]
+[ext_resource type="Texture2D" uid="uid://nw75wuby4n4j" path="res://assets/graph/ville/batiments/house_flat_roof.png" id="3_s17rx"]
+[ext_resource type="Texture2D" uid="uid://dn2ao5ovppl0o" path="res://assets/graph/ville/batiments/house_metal_door_sided.png" id="4_bx1hi"]
+[ext_resource type="Texture2D" uid="uid://c2e3eop83dar2" path="res://assets/graph/ville/batiments/house_small_window.png" id="5_fycvm"]
+
+[node name="small_house_3" type="Node2D"]
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2(-216, -592)
+
+[node name="Wall" type="Sprite2D" parent="Ground"]
+position = Vector2(371, 470)
+texture = ExtResource("1_yqjxb")
+
+[node name="HouseBigWindow" type="Sprite2D" parent="Ground"]
+position = Vector2(693, 424)
+texture = ExtResource("2_ycaej")
+flip_h = true
+
+[node name="Roof" type="Node2D" parent="."]
+position = Vector2(-216, -601)
+
+[node name="HouseFlatRoof" type="Sprite2D" parent="Roof"]
+position = Vector2(371, -33)
+texture = ExtResource("3_s17rx")
+
+[node name="HouseMetalDoorSided" type="Sprite2D" parent="."]
+position = Vector2(-569, -220)
+texture = ExtResource("4_bx1hi")
+
+[node name="HouseSmallWindow" type="Sprite2D" parent="."]
+position = Vector2(-196, -161)
+texture = ExtResource("5_fycvm")

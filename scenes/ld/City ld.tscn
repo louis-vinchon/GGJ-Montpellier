@@ -1,4 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://jurm871riq6i"]
+[gd_scene load_steps=27 format=3 uid="uid://jurm871riq6i"]
+
+[ext_resource type="PackedScene" uid="uid://dedqgnpy4am3m" path="res://scenes/buildings/big_house.tscn" id="1_0c0m4"]
+[ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="1_7d7d3"]
+[ext_resource type="PackedScene" uid="uid://clgo0mgqbch0h" path="res://scenes/Road/road_line_4.tscn" id="1_bb6ft"]
+[ext_resource type="PackedScene" uid="uid://hruxe3uf5v5m" path="res://scenes/Road/l_turn_return.tscn" id="1_kemid"]
+[ext_resource type="PackedScene" uid="uid://2l14v1j1uld8" path="res://scenes/Road/crossroad_t.tscn" id="2_noxp8"]
+[ext_resource type="PackedScene" uid="uid://d0ms6fwmvodd5" path="res://scenes/buildings/medium_house.tscn" id="2_srui3"]
+[ext_resource type="PackedScene" uid="uid://dlxbi4sic40lc" path="res://scenes/Road/road_line_4_2.tscn" id="3_grqhi"]
+[ext_resource type="PackedScene" uid="uid://ben6mvsb5b335" path="res://scenes/buildings/medium_house_2.tscn" id="3_rh6sx"]
+[ext_resource type="PackedScene" uid="uid://d1g6pnx7d38mw" path="res://scenes/Road/end_road_1.tscn" id="4_h4ags"]
+[ext_resource type="PackedScene" uid="uid://cc1ovriiyefdb" path="res://scenes/Road/crossroad_t_90_inverted.tscn" id="5_6e8s7"]
+[ext_resource type="PackedScene" uid="uid://day3g1volrl2a" path="res://scenes/buildings/big_house_2.tscn" id="6_nnfw3"]
+[ext_resource type="PackedScene" uid="uid://687lx55jagi0" path="res://scenes/Road/l_turn_inverted.tscn" id="7_8i3jg"]
+[ext_resource type="PackedScene" uid="uid://jd2u7wuqugyb" path="res://scenes/Road/crossroad_x.tscn" id="8_dyhqm"]
+[ext_resource type="PackedScene" uid="uid://0733tv1x3np4" path="res://scenes/Road/end_road_2.tscn" id="9_2l5am"]
+[ext_resource type="PackedScene" uid="uid://7yxom3mmxxu0" path="res://scenes/buildings/medium_house_4.tscn" id="9_bq8cl"]
+[ext_resource type="PackedScene" uid="uid://dl06g1ejo8gvo" path="res://scenes/buildings/small_house_4.tscn" id="10_vgxy0"]
+[ext_resource type="PackedScene" uid="uid://jrlei7n0qm0c" path="res://scenes/buildings/small_house_2.tscn" id="11_30kcb"]
+[ext_resource type="PackedScene" uid="uid://deu6y4wph3o53" path="res://scenes/Road/l_turn.tscn" id="15_028ok"]
+[ext_resource type="PackedScene" uid="uid://bhta4t8cabc67" path="res://scenes/buildings/medium_house_3.tscn" id="18_li8dq"]
+[ext_resource type="PackedScene" uid="uid://dgc84ds7trkcc" path="res://scenes/buildings/small_house_3.tscn" id="19_eayc3"]
+[ext_resource type="PackedScene" uid="uid://xpf07nlrly2u" path="res://scenes/buildings/big_house_3.tscn" id="20_b8ww7"]
+[ext_resource type="PackedScene" uid="uid://dhcwohuadljch" path="res://scenes/buildings/big_house_4.tscn" id="21_hmren"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
 
@@ -6,15 +29,15 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_m86x4"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_x6euf"]
-
 [sub_resource type="SphereMesh" id="SphereMesh_5w6fv"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="map template" type="Node2D" parent="."]
+visible = false
 
 [node name="ground" type="MeshInstance2D" parent="map template"]
+visible = false
 modulate = Color(0.486275, 0.486275, 0.486275, 1)
 position = Vector2(4241.5, 2663)
 scale = Vector2(8483, 5326)
@@ -25,9 +48,9 @@ metadata/_edit_lock_ = true
 
 [node name="dead end 1" type="MeshInstance2D" parent="map template/Dead end"]
 modulate = Color(1, 1, 0.2, 1)
-position = Vector2(1426.18, 4460)
+position = Vector2(1426.18, 4452.87)
 rotation = -1.5708
-scale = Vector2(1758.91, 1428.17)
+scale = Vector2(1744.66, 1428.17)
 mesh = SubResource("CapsuleMesh_3ytf3")
 
 [node name="Dead end 2" type="MeshInstance2D" parent="map template/Dead end"]
@@ -70,8 +93,8 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Free space 6" type="MeshInstance2D" parent="map template/Free space"]
 modulate = Color(0.290196, 0.627451, 0.235294, 1)
-position = Vector2(1424, 4948)
-scale = Vector2(2844, 779.424)
+position = Vector2(1424, 4941.64)
+scale = Vector2(2844, 766.712)
 mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Free space 5" type="MeshInstance2D" parent="map template/Free space"]
@@ -131,91 +154,15 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="UnRoad 6" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
-position = Vector2(1416, 3210.81)
+position = Vector2(1438.68, 3210.81)
 rotation = 1.5708
-scale = Vector2(2046, 162.396)
+scale = Vector2(2046, 600.849)
 mesh = SubResource("BoxMesh_m86x4")
-
-[node name="UnRoad 5" type="MeshInstance2D" parent="map template/unnecessary Roads"]
-modulate = Color(0.552941, 0.352941, 0.129412, 1)
-position = Vector2(1433, 4530)
-rotation = 1.5708
-scale = Vector2(700.567, 535.754)
-mesh = SubResource("CapsuleMesh_x6euf")
-
-[node name="UnRoad 4" type="MeshInstance2D" parent="map template/unnecessary Roads"]
-modulate = Color(0.552941, 0.352941, 0.129412, 1)
-position = Vector2(3492, 3299)
-rotation = -3.14159
-scale = Vector2(700.567, 535.754)
-mesh = SubResource("CapsuleMesh_x6euf")
 
 [node name="UnRoad 3" type="MeshInstance2D" parent="map template/unnecessary Roads"]
 modulate = Color(0.552941, 0.352941, 0.129412, 1)
 position = Vector2(5042, 3265)
 scale = Vector2(2638.19, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="UnRoad 2" type="MeshInstance2D" parent="map template/unnecessary Roads"]
-modulate = Color(0.552941, 0.352941, 0.129412, 1)
-position = Vector2(5184, 3937.38)
-rotation = 1.5708
-scale = Vector2(1508.07, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="UnRoad 1" type="MeshInstance2D" parent="map template/unnecessary Roads"]
-modulate = Color(0.552941, 0.352941, 0.129412, 1)
-position = Vector2(5710, 4609)
-rotation = -3.14159
-scale = Vector2(1213.48, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="Roads" type="Node2D" parent="map template"]
-
-[node name="Road 5" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(2956.91, 1967)
-scale = Vector2(2626.19, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="Road 4" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(7240.5, 4610)
-scale = Vector2(1849, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="Road 3" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(4194, 1146.25)
-rotation = 1.5708
-scale = Vector2(1803.98, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="Road 2" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(6397, 2455.71)
-rotation = 1.5708
-scale = Vector2(4424.06, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="Road 1" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(3333.23, 323)
-rotation = -3.14159
-scale = Vector2(6282.83, 162.396)
-mesh = SubResource("BoxMesh_m86x4")
-
-[node name="traffic roundabout" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(1428, 1952)
-scale = Vector2(606.23, 606.23)
-mesh = SubResource("SphereMesh_5w6fv")
-
-[node name="Road 6" type="MeshInstance2D" parent="map template/Roads"]
-modulate = Color(0.152941, 0.152941, 0.152941, 1)
-position = Vector2(1436, 1018)
-rotation = 1.5708
-scale = Vector2(1346.38, 162.396)
 mesh = SubResource("BoxMesh_m86x4")
 
 [node name="point d\'intérêt" type="Node2D" parent="map template"]
@@ -228,19 +175,19 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Clothe store building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
 modulate = Color(1, 0.231373, 1, 1)
-position = Vector2(1856, 664.437)
+position = Vector2(2075, 920.563)
 scale = Vector2(684, 521.125)
 mesh = SubResource("BoxMesh_m86x4")
 
 [node name="hair cut building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
 modulate = Color(1, 0.231373, 1, 1)
-position = Vector2(3767, 1633)
+position = Vector2(3498, 1619.56)
 scale = Vector2(684, 521.125)
 mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Bar building" type="MeshInstance2D" parent="map template/point d\'intérêt"]
 modulate = Color(1, 0.231373, 1, 1)
-position = Vector2(6828, 1145.22)
+position = Vector2(7020, 1139.78)
 scale = Vector2(684, 917.562)
 mesh = SubResource("BoxMesh_m86x4")
 
@@ -260,28 +207,28 @@ theme_override_font_sizes/font_size = 70
 text = "home"
 
 [node name="Clothe store" type="Label" parent="map template/point d\'intérêt"]
-offset_left = 1631.0
-offset_top = 597.0
-offset_right = 2077.0
-offset_bottom = 693.0
+offset_left = 1850.0
+offset_top = 853.125
+offset_right = 2296.0
+offset_bottom = 949.125
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Clothe store"
 
 [node name="Hair cut" type="Label" parent="map template/point d\'intérêt"]
-offset_left = 3572.0
-offset_top = 1577.0
-offset_right = 4018.0
-offset_bottom = 1673.0
+offset_left = 3303.0
+offset_top = 1563.56
+offset_right = 3749.0
+offset_bottom = 1659.56
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Hair cut"
 
 [node name="Bar" type="Label" parent="map template/point d\'intérêt"]
-offset_left = 6721.0
-offset_top = 1106.0
-offset_right = 7167.0
-offset_bottom = 1202.0
+offset_left = 6913.0
+offset_top = 1100.56
+offset_right = 7359.0
+offset_bottom = 1196.56
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Bar"
@@ -295,3 +242,461 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "Car wash
 "
+
+[node name="Roads" type="Node2D" parent="map template"]
+
+[node name="Road 5" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(2956.91, 1967)
+scale = Vector2(2626.19, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 4" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(7240.5, 4610)
+scale = Vector2(1849, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 3" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(4143.55, 1146.25)
+rotation = 1.5708
+scale = Vector2(1803.98, 599.661)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 2" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(6371.54, 2455.71)
+rotation = 1.5708
+scale = Vector2(4424.06, 609.286)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="Road 1" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(3333.23, 323)
+rotation = -3.14159
+scale = Vector2(6282.83, 162.396)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="traffic roundabout" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(1428, 1952)
+scale = Vector2(606.23, 606.23)
+mesh = SubResource("SphereMesh_5w6fv")
+
+[node name="Road 6" type="MeshInstance2D" parent="map template/Roads"]
+modulate = Color(0.152941, 0.152941, 0.152941, 1)
+position = Vector2(1438.67, 1018)
+rotation = 1.5708
+scale = Vector2(1346.38, 594.884)
+mesh = SubResource("BoxMesh_m86x4")
+
+[node name="ligne_1" type="Node2D" parent="."]
+
+[node name="Buildings" type="Node2D" parent="ligne_1"]
+
+[node name="SmallHouse2" parent="ligne_1/Buildings" instance=ExtResource("1_7d7d3")]
+position = Vector2(1698, 70)
+scale = Vector2(0.4, 0.4)
+
+[node name="MediumHouse2" parent="ligne_1/Buildings" instance=ExtResource("2_srui3")]
+position = Vector2(900, 69)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse3" parent="ligne_1/Buildings" instance=ExtResource("3_rh6sx")]
+position = Vector2(2556, 72)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse12" parent="ligne_1/Buildings" instance=ExtResource("3_rh6sx")]
+position = Vector2(4784, 88)
+scale = Vector2(0.4, 0.4)
+
+[node name="MediumHouse3" parent="ligne_1/Buildings" instance=ExtResource("2_srui3")]
+position = Vector2(6226, 72)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse11" parent="ligne_1/Buildings" instance=ExtResource("6_nnfw3")]
+position = Vector2(309, 69)
+scale = Vector2(0.4, 0.4)
+
+[node name="SmallHouse4" parent="ligne_1/Buildings" instance=ExtResource("1_7d7d3")]
+position = Vector2(5482, 77)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse2" parent="ligne_1/Buildings" instance=ExtResource("1_0c0m4")]
+position = Vector2(3997, 103)
+scale = Vector2(0.4, 0.4)
+
+[node name="Small_house_4" parent="ligne_1/Buildings" instance=ExtResource("11_30kcb")]
+position = Vector2(3368, 87)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_1"]
+
+[node name="L_turn_return" parent="ligne_1/Roads" instance=ExtResource("1_kemid")]
+position = Vector2(6470, 405)
+
+[node name="road_line_10" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(5719, 392)
+
+[node name="road_line_9" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(4973, 392)
+
+[node name="Crossroad_T3" parent="ligne_1/Roads" instance=ExtResource("2_noxp8")]
+position = Vector2(4269, 386)
+
+[node name="road_line_20" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(3498, 389)
+
+[node name="road_line_8" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(2768, 389)
+
+[node name="road_line_7" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(2022, 389)
+
+[node name="Crossroad_T2" parent="ligne_1/Roads" instance=ExtResource("2_noxp8")]
+position = Vector2(1316, 384)
+
+[node name="road_line_5" parent="ligne_1/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(545, 388)
+
+[node name="ligne_2" type="Node2D" parent="."]
+
+[node name="Buildings2" type="Node2D" parent="ligne_2"]
+
+[node name="Big_house_5" parent="ligne_2/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(4059, 1027)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_12" parent="ligne_2/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(3056, 834)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_4" parent="ligne_2/Buildings2" instance=ExtResource("18_li8dq")]
+position = Vector2(5364, 973)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_5" parent="ligne_2/Buildings2" instance=ExtResource("18_li8dq")]
+position = Vector2(7689, 1065)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_5" parent="ligne_2/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(6150, 847)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_7" parent="ligne_2/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(7839, 1267)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_2"]
+
+[node name="road_line_4_6" parent="ligne_2/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(1723, 908)
+
+[node name="road_line_4_3" parent="ligne_2/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(4675, 911)
+
+[node name="road_line_4_10" parent="ligne_2/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(6916, 914)
+
+[node name="ligne_3" type="Node2D" parent="."]
+
+[node name="Roads" type="Node2D" parent="ligne_3"]
+
+[node name="road_line_4_4" parent="ligne_3/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(5127, 1440)
+
+[node name="road_line_4_5" parent="ligne_3/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(2179, 1440)
+
+[node name="road_line_4_9" parent="ligne_3/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(7371, 1444)
+
+[node name="Buildings2" type="Node2D" parent="ligne_3"]
+
+[node name="medium_house_6" parent="ligne_3/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(1075, 1016)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_5" parent="ligne_3/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(1354, 1349)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse15" parent="ligne_3/Buildings2" instance=ExtResource("6_nnfw3")]
+position = Vector2(573, 1353)
+scale = Vector2(0.4, 0.4)
+
+[node name="big_house_4" parent="ligne_3/Buildings2" instance=ExtResource("20_b8ww7")]
+position = Vector2(2833, 1449)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_10" parent="ligne_3/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(3541, 1294)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_7" parent="ligne_3/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(6329, 1133)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_6" parent="ligne_3/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(5539, 1225)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_5" parent="ligne_3/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(6593, 1446)
+scale = Vector2(0.4, 0.4)
+
+[node name="big_house_5" parent="ligne_3/Buildings2" instance=ExtResource("20_b8ww7")]
+position = Vector2(5874, 1573)
+scale = Vector2(0.4, 0.4)
+
+[node name="ligne_4" type="Node2D" parent="."]
+
+[node name="Buildings2" type="Node2D" parent="ligne_4"]
+
+[node name="BigHouse15" parent="ligne_4/Buildings2" instance=ExtResource("3_rh6sx")]
+position = Vector2(1670, 1672)
+scale = Vector2(0.4, 0.4)
+
+[node name="Small_house_3" parent="ligne_4/Buildings2" instance=ExtResource("11_30kcb")]
+position = Vector2(922, 1669)
+scale = Vector2(0.4, 0.4)
+
+[node name="SmallHouse4" parent="ligne_4/Buildings2" instance=ExtResource("1_7d7d3")]
+position = Vector2(353, 1679)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_6" parent="ligne_4/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(4243, 1237)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse17" parent="ligne_4/Buildings2" instance=ExtResource("6_nnfw3")]
+position = Vector2(3581, 1679)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_8" parent="ligne_4/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(2978, 1684)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_6" parent="ligne_4/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(6811, 1653)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_6" parent="ligne_4/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(8101, 1620)
+scale = Vector2(0.4, 0.4)
+
+[node name="big_house_4" parent="ligne_4/Buildings2" instance=ExtResource("20_b8ww7")]
+position = Vector2(8464, 2000)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_4"]
+
+[node name="road_line_4_11" parent="ligne_4/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(7825, 1974)
+
+[node name="L_turn_inverted" parent="ligne_4/Roads" instance=ExtResource("7_8i3jg")]
+position = Vector2(5502, 1923)
+scale = Vector2(1.03998, 1)
+
+[node name="road_line_20" parent="ligne_4/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(4879, 1983)
+
+[node name="road_line_17" parent="ligne_4/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(4133, 1983)
+
+[node name="road_line_6" parent="ligne_4/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(3389, 1983)
+
+[node name="crossroad_X" parent="ligne_4/Roads" instance=ExtResource("8_dyhqm")]
+position = Vector2(2642, 1974)
+
+[node name="road_line_4" parent="ligne_4/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(1896, 1983)
+
+[node name="road_line_19" parent="ligne_4/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(1150, 1983)
+
+[node name="end_road_2" parent="ligne_4/Roads" instance=ExtResource("9_2l5am")]
+position = Vector2(697, 1979)
+
+[node name="ligne_5" type="Node2D" parent="."]
+
+[node name="Buildings2" type="Node2D" parent="ligne_5"]
+
+[node name="Big_house_6" parent="ligne_5/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(7138, 2014)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_11" parent="ligne_5/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(870, 2321)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_5" parent="ligne_5/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(6176, 1942)
+scale = Vector2(0.4, 0.4)
+
+[node name="big_house_4" parent="ligne_5/Buildings2" instance=ExtResource("20_b8ww7")]
+position = Vector2(6432, 2197)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_7" parent="ligne_5/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(7357, 2299)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_6" parent="ligne_5/Buildings2" instance=ExtResource("19_eayc3")]
+position = Vector2(8767, 2376)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_5"]
+
+[node name="road_line_4_12" parent="ligne_5/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(8281, 2506)
+
+[node name="road_line_4_2" parent="ligne_5/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(3090, 2502)
+
+[node name="ligne_6" type="Node2D" parent="."]
+
+[node name="Buildings2" type="Node2D" parent="ligne_6"]
+
+[node name="Big_house_11" parent="ligne_6/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(2591, 2743)
+scale = Vector2(0.4, 0.4)
+
+[node name="MediumHouse5" parent="ligne_6/Buildings2" instance=ExtResource("2_srui3")]
+position = Vector2(4613, 2729)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse15" parent="ligne_6/Buildings2" instance=ExtResource("6_nnfw3")]
+position = Vector2(7758, 2732)
+scale = Vector2(0.4, 0.4)
+
+[node name="BigHouse16" parent="ligne_6/Buildings2" instance=ExtResource("3_rh6sx")]
+position = Vector2(7185, 2731)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_8" parent="ligne_6/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(2804, 3043)
+scale = Vector2(0.4, 0.4)
+
+[node name="Small_house_3" parent="ligne_6/Buildings2" instance=ExtResource("11_30kcb")]
+position = Vector2(6352, 2724)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_6"]
+
+[node name="crossroad_T_90_inverted" parent="ligne_6/Roads" instance=ExtResource("5_6e8s7")]
+position = Vector2(8678, 3021)
+
+[node name="road_line_14" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(7993, 3045)
+
+[node name="road_line_13" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(7252, 3045)
+
+[node name="road_line_12" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(6509, 3045)
+
+[node name="road_line_11" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(5766, 3045)
+
+[node name="road_line_18" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(5020, 3045)
+
+[node name="road_line_19" parent="ligne_6/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(4273, 3045)
+
+[node name="L_turn" parent="ligne_6/Roads" instance=ExtResource("15_028ok")]
+position = Vector2(3504, 2975)
+
+[node name="ligne_7" type="Node2D" parent="."]
+
+[node name="Buildings2" type="Node2D" parent="ligne_7"]
+
+[node name="medium_house_13" parent="ligne_7/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(3005, 3264)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_4" parent="ligne_7/Buildings2" instance=ExtResource("18_li8dq")]
+position = Vector2(9534, 3222)
+scale = Vector2(0.4, 0.4)
+
+[node name="small_house_9" parent="ligne_7/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(3888, 3357)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_12" parent="ligne_7/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(6212, 3382)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_14" parent="ligne_7/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(5154, 3369)
+scale = Vector2(0.4, 0.4)
+
+[node name="Roads" type="Node2D" parent="ligne_7"]
+
+[node name="road_line_4_7" parent="ligne_7/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(9182, 3564)
+
+[node name="ligne_8" type="Node2D" parent="."]
+
+[node name="Roads" type="Node2D" parent="ligne_8"]
+
+[node name="road_line_4_8" parent="ligne_8/Roads" instance=ExtResource("3_grqhi")]
+position = Vector2(9638, 4094)
+
+[node name="Buildings2" type="Node2D" parent="ligne_8"]
+
+[node name="small_house_6" parent="ligne_8/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(8424, 3584)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_8" parent="ligne_8/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(8677, 3854)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_9" parent="ligne_8/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(8915, 4126)
+scale = Vector2(0.4, 0.4)
+
+[node name="big_house_5" parent="ligne_8/Buildings2" instance=ExtResource("20_b8ww7")]
+position = Vector2(9926, 3693)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_8" parent="ligne_8/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(9232, 4482)
+scale = Vector2(0.4, 0.4)
+
+[node name="ligne_9" type="Node2D" parent="."]
+
+[node name="Roads" type="Node2D" parent="ligne_9"]
+
+[node name="end_road_1" parent="ligne_9/Roads" instance=ExtResource("4_h4ags")]
+position = Vector2(12027, 4638)
+
+[node name="road_line_16" parent="ligne_9/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(11563, 4641)
+
+[node name="road_line_15" parent="ligne_9/Roads" instance=ExtResource("1_bb6ft")]
+position = Vector2(10816, 4639)
+
+[node name="L_turn2" parent="ligne_9/Roads" instance=ExtResource("15_028ok")]
+position = Vector2(10051, 4568)
+
+[node name="Buildings2" type="Node2D" parent="ligne_9"]
+
+[node name="small_house_7" parent="ligne_9/Buildings2" instance=ExtResource("10_vgxy0")]
+position = Vector2(10217, 4960)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_9" parent="ligne_9/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(9571, 4867)
+scale = Vector2(0.4, 0.4)
+
+[node name="medium_house_10" parent="ligne_9/Buildings2" instance=ExtResource("9_bq8cl")]
+position = Vector2(12177, 4941)
+scale = Vector2(0.4, 0.4)
+
+[node name="Buildings" type="Node2D" parent="."]
+scale = Vector2(0.4, 0.4)

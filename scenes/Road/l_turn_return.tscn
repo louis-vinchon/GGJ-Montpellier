@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://hruxe3uf5v5m"]
+
+[ext_resource type="PackedScene" uid="uid://b74e66jhp1pwu" path="res://scenes/Road/road_angle_return.tscn" id="1_mlr6m"]
+[ext_resource type="PackedScene" uid="uid://dfkfquhf0jdkc" path="res://scenes/Road/road_6.tscn" id="2_xq6im"]
+[ext_resource type="PackedScene" uid="uid://cwtx85rr7fvn" path="res://scenes/Road/road.tscn" id="3_cpyc0"]
+
+[node name="L_turn_return" type="Node2D"]
+
+[node name="road_angle_return" parent="." instance=ExtResource("1_mlr6m")]
+position = Vector2(-56, -83)
+
+[node name="road_7" parent="." instance=ExtResource("2_xq6im")]
+position = Vector2(57, 49)
+
+[node name="road_6" parent="." instance=ExtResource("2_xq6im")]
+position = Vector2(170, 182)
+
+[node name="Road" parent="." instance=ExtResource("3_cpyc0")]
+position = Vector2(-281, -17)
