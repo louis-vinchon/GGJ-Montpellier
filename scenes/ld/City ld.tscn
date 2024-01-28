@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="1_7d7d3"]
 [ext_resource type="PackedScene" uid="uid://clgo0mgqbch0h" path="res://scenes/Road/road_line_4.tscn" id="1_bb6ft"]
 [ext_resource type="PackedScene" uid="uid://hruxe3uf5v5m" path="res://scenes/Road/l_turn_return.tscn" id="1_kemid"]
-[ext_resource type="PackedScene" uid="uid://b8efp0278qq7n" path="res://scenes/tree.tscn" id="1_wp63w"]
+[ext_resource type="PackedScene" uid="uid://c1x6uip34tf3b" path="res://scenes/tree.tscn" id="1_wp63w"]
 [ext_resource type="PackedScene" uid="uid://2l14v1j1uld8" path="res://scenes/Road/crossroad_t.tscn" id="2_noxp8"]
 [ext_resource type="PackedScene" uid="uid://d0ms6fwmvodd5" path="res://scenes/buildings/medium_house.tscn" id="2_srui3"]
 [ext_resource type="PackedScene" uid="uid://dlxbi4sic40lc" path="res://scenes/Road/road_line_4_2.tscn" id="3_grqhi"]
@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://xpf07nlrly2u" path="res://scenes/buildings/big_house_3.tscn" id="20_b8ww7"]
 [ext_resource type="PackedScene" uid="uid://dhcwohuadljch" path="res://scenes/buildings/big_house_4.tscn" id="21_hmren"]
 [ext_resource type="AudioStream" uid="uid://bme5k1fi0bteg" path="res://assets/audio/LP_AMB_City_1_V1.wav" id="24_4moec"]
-[ext_resource type="AudioStream" uid="uid://c623pxbwbj8rj" path="res://assets/audio/Music/Mixdown_GGJ_CityTheme_V2.wav" id="25_h5wi5"]
+[ext_resource type="AudioStream" uid="uid://bpc0k1j2vfuu4" path="res://assets/audio/Music/Mixdown_GGJ_CityTheme_V2.wav" id="25_h5wi5"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gd7b"]
 
@@ -746,3 +746,5 @@ autoplay = true
 stream = ExtResource("25_h5wi5")
 volume_db = -5.0
 autoplay = true
+max_distance = 2e+07
+attenuation = 7.01101e-05
