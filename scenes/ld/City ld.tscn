@@ -1,9 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://jurm871riq6i"]
+[gd_scene load_steps=28 format=3 uid="uid://jurm871riq6i"]
 
 [ext_resource type="PackedScene" uid="uid://dedqgnpy4am3m" path="res://scenes/buildings/big_house.tscn" id="1_0c0m4"]
 [ext_resource type="PackedScene" uid="uid://cje8u8y7v6y80" path="res://scenes/buildings/small_house.tscn" id="1_7d7d3"]
 [ext_resource type="PackedScene" uid="uid://clgo0mgqbch0h" path="res://scenes/Road/road_line_4.tscn" id="1_bb6ft"]
 [ext_resource type="PackedScene" uid="uid://hruxe3uf5v5m" path="res://scenes/Road/l_turn_return.tscn" id="1_kemid"]
+[ext_resource type="PackedScene" uid="uid://b8efp0278qq7n" path="res://scenes/tree.tscn" id="1_wp63w"]
 [ext_resource type="PackedScene" uid="uid://2l14v1j1uld8" path="res://scenes/Road/crossroad_t.tscn" id="2_noxp8"]
 [ext_resource type="PackedScene" uid="uid://d0ms6fwmvodd5" path="res://scenes/buildings/medium_house.tscn" id="2_srui3"]
 [ext_resource type="PackedScene" uid="uid://dlxbi4sic40lc" path="res://scenes/Road/road_line_4_2.tscn" id="3_grqhi"]
@@ -295,6 +296,15 @@ mesh = SubResource("BoxMesh_m86x4")
 
 [node name="Buildings" type="Node2D" parent="ligne_1"]
 
+[node name="Tree5" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
+position = Vector2(2126, -356)
+
+[node name="Tree6" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
+position = Vector2(4799, -456)
+
+[node name="Tree7" parent="ligne_1/Buildings" instance=ExtResource("1_wp63w")]
+position = Vector2(-69, -264)
+
 [node name="SmallHouse2" parent="ligne_1/Buildings" instance=ExtResource("1_7d7d3")]
 position = Vector2(1698, 70)
 scale = Vector2(0.4, 0.4)
@@ -418,6 +428,9 @@ position = Vector2(7371, 1444)
 position = Vector2(1075, 1016)
 scale = Vector2(0.4, 0.4)
 
+[node name="Tree3" parent="ligne_3/Buildings2" instance=ExtResource("1_wp63w")]
+position = Vector2(3594, 734)
+
 [node name="small_house_5" parent="ligne_3/Buildings2" instance=ExtResource("10_vgxy0")]
 position = Vector2(1354, 1349)
 scale = Vector2(0.4, 0.4)
@@ -437,6 +450,9 @@ scale = Vector2(0.4, 0.4)
 [node name="medium_house_7" parent="ligne_3/Buildings2" instance=ExtResource("9_bq8cl")]
 position = Vector2(6329, 1133)
 scale = Vector2(0.4, 0.4)
+
+[node name="Tree4" parent="ligne_3/Buildings2" instance=ExtResource("1_wp63w")]
+position = Vector2(5892, 918)
 
 [node name="small_house_6" parent="ligne_3/Buildings2" instance=ExtResource("19_eayc3")]
 position = Vector2(5539, 1225)
@@ -540,6 +556,9 @@ scale = Vector2(0.4, 0.4)
 position = Vector2(6432, 2197)
 scale = Vector2(0.4, 0.4)
 
+[node name="Tree5" parent="ligne_5/Buildings2" instance=ExtResource("1_wp63w")]
+position = Vector2(7055, 1933)
+
 [node name="Big_house_7" parent="ligne_5/Buildings2" instance=ExtResource("21_hmren")]
 position = Vector2(7357, 2299)
 scale = Vector2(0.4, 0.4)
@@ -547,6 +566,15 @@ scale = Vector2(0.4, 0.4)
 [node name="small_house_6" parent="ligne_5/Buildings2" instance=ExtResource("19_eayc3")]
 position = Vector2(8767, 2376)
 scale = Vector2(0.4, 0.4)
+
+[node name="Tree6" parent="ligne_5/Buildings2" instance=ExtResource("1_wp63w")]
+position = Vector2(9052, 2382)
+
+[node name="Tree" parent="ligne_5" instance=ExtResource("1_wp63w")]
+position = Vector2(3611, 2013)
+
+[node name="Tree2" parent="ligne_5" instance=ExtResource("1_wp63w")]
+position = Vector2(5546, 2323)
 
 [node name="Roads" type="Node2D" parent="ligne_5"]
 
@@ -559,10 +587,6 @@ position = Vector2(3090, 2502)
 [node name="ligne_6" type="Node2D" parent="."]
 
 [node name="Buildings2" type="Node2D" parent="ligne_6"]
-
-[node name="Big_house_11" parent="ligne_6/Buildings2" instance=ExtResource("21_hmren")]
-position = Vector2(2591, 2743)
-scale = Vector2(0.4, 0.4)
 
 [node name="MediumHouse5" parent="ligne_6/Buildings2" instance=ExtResource("2_srui3")]
 position = Vector2(4613, 2729)
@@ -582,6 +606,10 @@ scale = Vector2(0.4, 0.4)
 
 [node name="Small_house_3" parent="ligne_6/Buildings2" instance=ExtResource("11_30kcb")]
 position = Vector2(6352, 2724)
+scale = Vector2(0.4, 0.4)
+
+[node name="Big_house_11" parent="ligne_6/Buildings2" instance=ExtResource("21_hmren")]
+position = Vector2(2591, 2743)
 scale = Vector2(0.4, 0.4)
 
 [node name="Roads" type="Node2D" parent="ligne_6"]
@@ -634,6 +662,9 @@ scale = Vector2(0.4, 0.4)
 position = Vector2(5154, 3369)
 scale = Vector2(0.4, 0.4)
 
+[node name="Tree7" parent="ligne_7/Buildings2" instance=ExtResource("1_wp63w")]
+position = Vector2(9703, 3156)
+
 [node name="Roads" type="Node2D" parent="ligne_7"]
 
 [node name="road_line_4_7" parent="ligne_7/Roads" instance=ExtResource("3_grqhi")]
@@ -667,6 +698,9 @@ scale = Vector2(0.4, 0.4)
 [node name="Big_house_8" parent="ligne_8/Buildings2" instance=ExtResource("21_hmren")]
 position = Vector2(9232, 4482)
 scale = Vector2(0.4, 0.4)
+
+[node name="Tree7" parent="." instance=ExtResource("1_wp63w")]
+position = Vector2(9482, 4315)
 
 [node name="ligne_9" type="Node2D" parent="."]
 
