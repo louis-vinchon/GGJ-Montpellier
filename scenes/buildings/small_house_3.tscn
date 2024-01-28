@@ -20,6 +20,10 @@ position = Vector2(693, 424)
 texture = ExtResource("2_ycaej")
 flip_h = true
 
+[node name="HouseSmallWindow" type="Sprite2D" parent="Ground"]
+position = Vector2(20, 431)
+texture = ExtResource("5_fycvm")
+
 [node name="Roof" type="Node2D" parent="."]
 position = Vector2(-216, -601)
 
@@ -27,13 +31,9 @@ position = Vector2(-216, -601)
 position = Vector2(371, -33)
 texture = ExtResource("3_s17rx")
 
-[node name="HouseMetalDoorSided" type="Sprite2D" parent="."]
-position = Vector2(-569, -220)
+[node name="HouseMetalDoorSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-353, 381)
 texture = ExtResource("4_bx1hi")
-
-[node name="HouseSmallWindow" type="Sprite2D" parent="."]
-position = Vector2(-196, -161)
-texture = ExtResource("5_fycvm")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)

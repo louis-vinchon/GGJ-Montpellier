@@ -27,6 +27,18 @@ texture = ExtResource("2_rxmiq")
 position = Vector2(95, 392)
 texture = ExtResource("3_tlutq")
 
+[node name="BrickDark" type="Sprite2D" parent="Ground"]
+position = Vector2(407, 489)
+texture = ExtResource("6_xaa5t")
+
+[node name="BrickLight" type="Sprite2D" parent="Ground"]
+position = Vector2(463, 427)
+texture = ExtResource("9_tfeaw")
+
+[node name="StreetNumber" type="Sprite2D" parent="Ground"]
+position = Vector2(1017, 407)
+texture = ExtResource("5_lni2b")
+
 [node name="Roof" type="Node2D" parent="."]
 position = Vector2(-216, -601)
 
@@ -34,25 +46,13 @@ position = Vector2(-216, -601)
 position = Vector2(371, -23)
 texture = ExtResource("4_yt1sb")
 
-[node name="StreetNumber" type="Sprite2D" parent="."]
-position = Vector2(801, -185)
-texture = ExtResource("5_lni2b")
-
-[node name="BrickDark" type="Sprite2D" parent="."]
-position = Vector2(191, -103)
-texture = ExtResource("6_xaa5t")
-
-[node name="BrickLightSided" type="Sprite2D" parent="."]
-position = Vector2(-551, -357)
+[node name="BrickLightSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-335, 244)
 texture = ExtResource("7_l4fji")
 
-[node name="BrickOrangeSided" type="Sprite2D" parent="."]
-position = Vector2(-567, -441)
+[node name="BrickOrangeSided" type="Sprite2D" parent="Roof"]
+position = Vector2(-351, 160)
 texture = ExtResource("8_oh5up")
-
-[node name="BrickLight" type="Sprite2D" parent="."]
-position = Vector2(247, -165)
-texture = ExtResource("9_tfeaw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)

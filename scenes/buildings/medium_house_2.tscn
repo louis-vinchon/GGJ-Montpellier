@@ -65,16 +65,16 @@ texture = ExtResource("11_3l608")
 position = Vector2(-282, -698)
 texture = ExtResource("3_fr42j")
 
+[node name="HouseSmallWindowSided" type="Sprite2D" parent="FirstFloor"]
+position = Vector2(-649, -271)
+texture = ExtResource("6_8amox")
+
 [node name="Roof" type="Node2D" parent="."]
 position = Vector2(-296, -1024)
 
 [node name="Roof" type="Sprite2D" parent="Roof"]
 position = Vector2(366, -102)
 texture = ExtResource("6_sigfu")
-
-[node name="HouseSmallWindowSided" type="Sprite2D" parent="Roof"]
-position = Vector2(-353, 753)
-texture = ExtResource("6_8amox")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-87, 2)
