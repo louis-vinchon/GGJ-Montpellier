@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://jurm871riq6i" path="res://scenes/ld/City ld.tscn" id="2_appbg"]
 [ext_resource type="PackedScene" uid="uid://dj6br5xyalht" path="res://3C-Felix/PlayerCharacter.tscn" id="3_r0vde"]
 [ext_resource type="PackedScene" uid="uid://c75o7a5huad5c" path="res://scenes/people/lucas/lucas.tscn" id="4_m4r78"]
-[ext_resource type="PackedScene" uid="uid://bl218vtv8cbph" path="res://scenes/people/julie/julie.tscn" id="5_cj7u5"]
+[ext_resource type="PackedScene" uid="uid://bl218vtv8cbph" path="res://scenes/people/julie/julie.tscn" id="5_pu81y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2x78r"]
 texture = ExtResource("1_6c55q")
@@ -112,5 +112,5 @@ position = Vector2(239, 357)
 [node name="Lucas" parent="." instance=ExtResource("4_m4r78")]
 position = Vector2(638, 398)
 
-[node name="Julie" parent="." instance=ExtResource("5_cj7u5")]
-position = Vector2(1133, 372)
+[node name="Julie" parent="." instance=ExtResource("5_pu81y")]
+position = Vector2(1055, 341)
