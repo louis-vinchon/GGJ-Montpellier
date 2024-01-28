@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://gonr8m2f24n0"]
+[gd_scene load_steps=5 format=3 uid="uid://gonr8m2f24n0"]
+
+[ext_resource type="AudioStream" uid="uid://ckv37gbdrpjw4" path="res://assets/audio/Music/GGJ_Music_BarTheme_V1.wav" id="1_afak4"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_5jpvv"]
 
@@ -193,3 +195,8 @@ offset_bottom = 141.0
 theme_override_font_sizes/font_size = 50
 text = "Tapis
 "
+
+[node name="BGM_Bar" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_afak4")
+volume_db = -15.0
+autoplay = true
