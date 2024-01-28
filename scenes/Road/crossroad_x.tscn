@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://jd2u7wuqugyb"]
+
+[ext_resource type="PackedScene" uid="uid://p5m0ndi4kqvi" path="res://scenes/Road/road2.tscn" id="1_foebg"]
+[ext_resource type="PackedScene" uid="uid://b0wfrtot2cy8f" path="res://scenes/Road/road_7.tscn" id="2_3op46"]
+[ext_resource type="PackedScene" uid="uid://icfrbeaqvke" path="res://scenes/Road/road_8.tscn" id="3_tidb0"]
+
+[node name="crossroad_X" type="Node2D"]
+
+[node name="road_3" parent="." instance=ExtResource("1_foebg")]
+position = Vector2(-169, -197)
+
+[node name="road_7" parent="." instance=ExtResource("2_3op46")]
+position = Vector2(-278, 4)
+
+[node name="road_8" parent="." instance=ExtResource("2_3op46")]
+position = Vector2(283, 4)
+
+[node name="road_9" parent="." instance=ExtResource("3_tidb0")]
+position = Vector2(-55, -65)
+
+[node name="road_10" parent="." instance=ExtResource("3_tidb0")]
+position = Vector2(62, 68)
+
+[node name="road_2" parent="." instance=ExtResource("1_foebg")]
+position = Vector2(173, 201)

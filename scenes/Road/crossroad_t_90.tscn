@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnaljci6cewk5"]
+
+[ext_resource type="PackedScene" uid="uid://cy0mwpb2gv10j" path="res://scenes/Road/road_5.tscn" id="1_1t8al"]
+[ext_resource type="PackedScene" uid="uid://cwtx85rr7fvn" path="res://scenes/Road/road.tscn" id="2_aysvw"]
+
+[node name="crossroad_T_90" type="Node2D"]
+
+[node name="road_5" parent="." instance=ExtResource("1_1t8al")]
+position = Vector2(-167, -194)
+
+[node name="road_6" parent="." instance=ExtResource("1_1t8al")]
+position = Vector2(-54, -61)
+
+[node name="road_7" parent="." instance=ExtResource("1_1t8al")]
+position = Vector2(59, 72)
+
+[node name="road_8" parent="." instance=ExtResource("1_1t8al")]
+position = Vector2(174, 204)
+
+[node name="Road" parent="." instance=ExtResource("2_aysvw")]
+position = Vector2(278, 4)

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://deu6y4wph3o53"]
+
+[ext_resource type="PackedScene" uid="uid://cy0mwpb2gv10j" path="res://scenes/Road/road_5.tscn" id="1_4v3c5"]
+[ext_resource type="PackedScene" uid="uid://i2gr814751ed" path="res://scenes/Road/road_4.tscn" id="2_dtejf"]
+[ext_resource type="PackedScene" uid="uid://bgfwtlaxv7y2c" path="res://scenes/Road/road_angle_inverted.tscn" id="3_pwxyk"]
+[ext_resource type="Texture2D" uid="uid://b3lhkcgyxbl1t" path="res://assets/graph/ville/Road/sidewalk.png" id="4_2nqll"]
+
+[node name="L_turn" type="Node2D"]
+
+[node name="road_5" parent="." instance=ExtResource("1_4v3c5")]
+position = Vector2(-116, -135)
+
+[node name="road_6" parent="." instance=ExtResource("1_4v3c5")]
+position = Vector2(-2, -2)
+
+[node name="Road_4" parent="." instance=ExtResource("2_dtejf")]
+position = Vector2(305, 66)
+
+[node name="road_angle_inverted" parent="." instance=ExtResource("3_pwxyk")]
+position = Vector2(110, 131)
+
+[node name="Sidewalk" type="Sprite2D" parent="."]
+position = Vector2(140.25, -141)
+scale = Vector2(0.887622, 1)
+texture = ExtResource("4_2nqll")

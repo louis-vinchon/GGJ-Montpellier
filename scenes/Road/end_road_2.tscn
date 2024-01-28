@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://0733tv1x3np4"]
+
+[ext_resource type="Texture2D" uid="uid://yuowdhhaom2y" path="res://assets/graph/ville/Road/road.png" id="1_5wynt"]
+[ext_resource type="Texture2D" uid="uid://b3lhkcgyxbl1t" path="res://assets/graph/ville/Road/sidewalk.png" id="2_lvo30"]
+
+[node name="end_road_2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-66.5, -66.5)
+texture = ExtResource("1_5wynt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(47.5, 66.5)
+texture = ExtResource("1_5wynt")
+
+[node name="Sidewalk" type="Sprite2D" parent="."]
+position = Vector2(-180, -206)
+texture = ExtResource("2_lvo30")
+
+[node name="Sidewalk2" type="Sprite2D" parent="."]
+position = Vector2(161, 193)
+texture = ExtResource("2_lvo30")
+
+[node name="Sidewalk3" type="Sprite2D" parent="."]
+position = Vector2(-367, -205)
+texture = ExtResource("2_lvo30")
+
+[node name="Sidewalk4" type="Sprite2D" parent="."]
+position = Vector2(-254, -72)
+texture = ExtResource("2_lvo30")
+
+[node name="Sidewalk5" type="Sprite2D" parent="."]
+position = Vector2(-140, 61)
+texture = ExtResource("2_lvo30")
+
+[node name="Sidewalk6" type="Sprite2D" parent="."]
+position = Vector2(-26, 193)
+texture = ExtResource("2_lvo30")
