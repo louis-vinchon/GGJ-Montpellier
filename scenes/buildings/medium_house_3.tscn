@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://kbbepedysfnb" path="res://assets/graph/ville/batiments/brick_light.png" id="11_8maob"]
 [ext_resource type="Texture2D" uid="uid://brx0b5y04sxt4" path="res://assets/graph/ville/batiments/house_orange_roof.png" id="12_usord"]
 
-[node name="medium_house_3" type="Node2D"]
+[node name="medium_house_3" type="StaticBody2D"]
 
 [node name="Ground" type="Node2D" parent="."]
 position = Vector2(-302, -594)
@@ -80,3 +80,7 @@ texture = ExtResource("8_jvnsr")
 [node name="BrickDark" type="Sprite2D" parent="."]
 position = Vector2(-382, -83)
 texture = ExtResource("9_roxc0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-78, 4)
+polygon = PackedVector2Array(-477, 85, 939, 85, 749, -110, -650, -118)
