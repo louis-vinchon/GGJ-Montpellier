@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dj6br5xyalht"]
+[gd_scene load_steps=8 format=3 uid="uid://dj6br5xyalht"]
 
 [ext_resource type="Script" path="res://3C-Felix/PlayerCharacter.gd" id="1_dtsqw"]
+[ext_resource type="PackedScene" uid="uid://dpw61awr4p0ny" path="res://scenes/Particles/cars_smoke.tscn" id="2_a13rm"]
 [ext_resource type="Texture2D" uid="uid://n6xnpkm3na8r" path="res://assets/graph/car/car_side.png" id="2_fw3s3"]
 [ext_resource type="Texture2D" uid="uid://d33hdhn820836" path="res://assets/TEX_indicator.png" id="2_iwt2u"]
 [ext_resource type="Script" path="res://3C-Felix/InteractionRay.gd" id="3_4hgy7"]
@@ -19,6 +20,10 @@ inertia = 5.0
 linear_damp = 1.0
 script = ExtResource("1_dtsqw")
 accelerationPower = 50000.0
+
+[node name="Node2D" parent="." instance=ExtResource("2_a13rm")]
+position = Vector2(-15, 2)
+scale = Vector2(0.5, 0.5)
 
 [node name="Indicator" type="Sprite2D" parent="."]
 z_index = 10
@@ -43,3 +48,5 @@ script = ExtResource("3_4hgy7")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="initiateInteraction" from="." to="RayCast2D" method="_on_player_character_initiate_interaction"]
+
+[editable path="Node2D"]

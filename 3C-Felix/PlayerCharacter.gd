@@ -76,7 +76,16 @@ func _process(delta):
 	
 	$Sprite2D.global_rotation = 0
 	
-	play_sounds()
+	if (acceleration.length() > 400) :
+		
+		$Node2D.get_child(0).emitting = true
+		$Node2D.get_child(0).amount = clamp(acceleration.length() - 400, 0, 300) / 10
+	else :
+		
+		$Node2D.get_child(0).emitting = false
+		
+	
+	#play_sounds()
 
 func play_sounds():
 	if linear_velocity.length() > 0:

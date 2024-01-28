@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dpw61awr4p0ny"]
+[gd_scene load_steps=15 format=3 uid="uid://dpw61awr4p0ny"]
 
 [ext_resource type="Texture2D" uid="uid://dtiwluc17nq6" path="res://assets/spaceEffects_014.png" id="1_sa3q5"]
 
@@ -9,7 +9,14 @@ point_count = 2
 [sub_resource type="CurveTexture" id="CurveTexture_u5c6b"]
 curve = SubResource("Curve_aojp3")
 
+[sub_resource type="Curve" id="Curve_p7dmt"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
 [sub_resource type="CurveTexture" id="CurveTexture_vrw8e"]
+curve = SubResource("Curve_p7dmt")
 
 [sub_resource type="Curve" id="Curve_4n5hi"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0.627907), 0.0, 0.0, 0, 0]
@@ -78,4 +85,3 @@ texture = ExtResource("1_sa3q5")
 explosiveness = 0.3
 randomness = 0.85
 fixed_fps = 60
-local_coords = true
