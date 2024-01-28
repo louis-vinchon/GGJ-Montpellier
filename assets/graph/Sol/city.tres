@@ -1,8 +1,6 @@
-[gd_resource type="TileSet" load_steps=8 format=3 uid="uid://ccsqba4tntk3g"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://b7l8mfnim13ut"]
 
 [ext_resource type="Texture2D" uid="uid://caxa2y1755fet" path="res://assets/graph/Sol/grass.png" id="1_g6rlf"]
-[ext_resource type="Texture2D" uid="uid://o4okf6ld2cti" path="res://assets/graph/Sol/tapis.png" id="2_n7w8q"]
-[ext_resource type="Texture2D" uid="uid://c1d6f6fov7cv0" path="res://assets/graph/Sol/wood.png" id="3_k4uea"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_4fclt"]
 tile_data = PackedInt32Array(0, 2, 0, 1, 2, 0, 65537, 2, 0, 131073, 2, 0, 131074, 2, 0)
@@ -90,52 +88,10 @@ texture_region_size = Vector2i(256, 256)
 4:4/0 = 0
 4:4/0/terrain_set = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_goa4v"]
-texture = ExtResource("2_n7w8q")
-texture_region_size = Vector2i(256, 256)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-4:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-4:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-4:2/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-4:4/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fh0q7"]
-texture = ExtResource("3_k4uea")
-texture_region_size = Vector2i(256, 256)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-4:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-4:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-4:2/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-4:4/0 = 0
-
 [resource]
 tile_size = Vector2i(256, 256)
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "grass"
 terrain_set_0/terrain_0/color = Color(0.686275, 0.054902, 0.407843, 1)
 sources/1 = SubResource("TileSetAtlasSource_cl1as")
-sources/2 = SubResource("TileSetAtlasSource_goa4v")
-sources/3 = SubResource("TileSetAtlasSource_fh0q7")
 pattern_0 = SubResource("TileMapPattern_4fclt")
